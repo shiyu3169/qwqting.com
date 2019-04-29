@@ -1,0 +1,4 @@
+[build]
+base= "qwqting.com/"
+publish = 'qwqting.com/build'
+command = 'npm run build'
