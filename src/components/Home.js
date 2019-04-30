@@ -1,60 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./utility/Navbar";
+import Typer from "./utility/Typer";
 
 export default class Home extends Component {
-    state = {
-        words: ["Jewelry Designer", "Jeweler", "Illustrator"],
-        wordIndex: 0,
-        isDeleting: false,
-        txt: ""
-    };
-    type() {
-        const { wordIndex, words, isDeleting, txt } = this.state;
-        const current = wordIndex % words.length;
-        const fullTxt = words[current];
-
-        if (isDeleting) {
-            this.setState({
-                txt: fullTxt.substring(0, txt.length - 1)
-            });
-        } else {
-            this.setState({
-                txt: fullTxt.substring(0, txt.length + 1)
-            });
-        }
-
-        let typeSpeed = 300;
-
-        if (isDeleting) {
-            typeSpeed /= 2;
-        }
-        if (!isDeleting && txt === fullTxt) {
-            typeSpeed = 3000;
-            this.setState({
-                isDeleting: true
-            });
-        } else if (isDeleting && txt === "") {
-            this.setState({
-                isDeleting: false
-            });
-            this.setState({
-                wordIndex: wordIndex + 1
-            });
-            typeSpeed = 500;
-        }
-
-        this.timer = setTimeout(() => {
-            this.type();
-        }, typeSpeed);
-    }
-
-    componentDidMount() {
-        this.type();
-    }
-    componentWillUnmount() {
-        clearTimeout(this.timer);
-    }
     render() {
         return (
             <div>
@@ -65,9 +14,14 @@ export default class Home extends Component {
                             <h1>
                                 I Am Qiuting Wang
                                 <br />
-                                <span className="txt-type">
-                                    The {this.state.txt}
-                                </span>
+                                The{" "}
+                                <Typer
+                                    words={[
+                                        "Jewelry Designer",
+                                        "Jeweler",
+                                        "Illustrator"
+                                    ]}
+                                />
                             </h1>
                             <p className="lead">
                                 Lorem ipsum dolor sit, amet consectetur
