@@ -16,14 +16,17 @@ function App() {
     return (
         <Router>
             <div>
+                {/* Main */}
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/contact" component={Contact} />
-                <Route exact path="/gallery" component={Gallery} />
-                <Route exact path="/rendering" component={Rendering} />
-                <Route exact path="/lookBook" component={LookBook} />
-                <Route exact path="/illustration" component={Illustration} />
+                {/* Jewelry */}
                 <Route exact path="/jewelry" component={Jewelry} />
+                <Route exact path="/gallery" component={Gallery} />
+                <Route exact path="/lookBook" component={LookBook} />
+                <Route exact path="/rendering" component={Rendering} />
+                {/* Illustration */}
+                <Route exact path="/illustration" component={Illustration} />
             </div>
         </Router>
     );

@@ -53,34 +53,23 @@ img {
 
     li {
         padding: 1rem 1.5rem;
-
         ul {
-            margin-top: 10px;
-            display: block;
+            visibility: hidden;
             position: absolute;
+            display: block;
             opacity: 0;
             transition: opacity 0.5s;
-
             li {
                 a {
                     color: set-text-color($medium-color);
                 }
-            }
-        }
 
-        &:hover {
-            ul {
-                opacity: 1;
-                z-index: 1;
-                background: $light-color;
-                li {
-                    color: set-text-color($light-color);
+                ul {
                     &:hover {
-                        cursor: pointer;
-                        background: $medium-color;
-                        a {
-                            border-color: $dark-color;
-                        }
+                        visibility: visible;
+                        opacity: 1;
+                        z-index: 1;
+                        background: $light-color;
                     }
                 }
             }
@@ -95,8 +84,30 @@ img {
         padding-bottom: 0.5rem;
         transition: border-color 0.5s;
 
+        + ul {
+            &:hover {
+                visibility: visible;
+                opacity: 1;
+                z-index: 1;
+                background: $light-color;
+            }
+
+            li {
+                &:hover {
+                    background: $medium-color;
+                }
+            }
+        }
+
         &:hover {
-            border-color: $medium-color;
+            border-color: $dark-color;
+
+            + ul {
+                visibility: visible;
+                opacity: 1;
+                z-index: 1;
+                background: $light-color;
+            }
         }
 
         &.current {
