@@ -193,58 +193,6 @@ img {
             }
         }
     }
-
-    // Home Scetion C
-    &-c {
-        .process {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 1.5rem;
-            text-align: center;
-
-            // Process-step
-            &-step {
-                position: absolute;
-                top: 0;
-                right: 0;
-                font-size: 28px;
-                background: $main-color;
-                color: set-text-color($main-color);
-                border-radius: 50%;
-                height: 15px;
-                width: 15px;
-                line-height: 15px;
-                padding: 1rem;
-                transition: all 1s;
-            }
-
-            // process-icon
-            &-icon {
-                border-radius: 50%;
-                background: $dark-color;
-                color: set-text-color($dark-color);
-                padding: 2rem;
-                width: 70px;
-                height: 70px;
-                line-height: 70px;
-                text-align: center;
-                position: relative;
-                transition: all 1s;
-
-                &:hover {
-                    background: $main-color;
-                    width: 90px;
-                    height: 90px;
-                    line-height: 90px;
-
-                    .process-step {
-                        background: $dark-color;
-                        color: set-text-color($dark-color);
-                    }
-                }
-            }
-        }
-    }
 }
 
 // About Sections
@@ -288,37 +236,6 @@ img {
         .award-3 .fas {
             color: $main-color;
             margin: 1rem;
-        }
-    }
-
-    // About B
-    &-b {
-        .progress {
-            overflow: hidden;
-            height: 20px;
-            background: $medium-color;
-            border-radius: 5px;
-            margin-bottom: 0.3rem;
-
-            div {
-                height: 100%;
-                color: #fff;
-                text-align: center;
-                background: $main-color;
-            }
-        }
-    }
-
-    // About C
-    &-c {
-        .about-logos {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 2rem;
-
-            img {
-                width: 70%;
-            }
         }
     }
 
