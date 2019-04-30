@@ -128,62 +128,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </section>
-                <section id="home-c" className="text-center py-2">
-                    <div className="container">
-                        <h2 className="section-title">My Creative Process</h2>
-                        <div className="bottom-line" />
-                        <p className="lead">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Tempore, repudiandae.
-                        </p>
-                        <div className="process">
-                            <div>
-                                <i className="fas fa-file-alt fa-4x process-icon my-2">
-                                    <div className="process-step">1</div>
-                                </i>
-                                <h3>Discuss The Project</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Recusandae repudiandae,
-                                    omnis odio illo quidem nihil.
-                                </p>
-                            </div>
-                            <div>
-                                <i className="fas fa-desktop fa-4x process-icon my-2">
-                                    <div className="process-step">2</div>
-                                </i>
-                                <h3>BrainStorm</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Recusandae repudiandae,
-                                    omnis odio illo quidem nihil.
-                                </p>
-                            </div>
-                            <div>
-                                <i className="fas fa-object-ungroup fa-4x process-icon my-2">
-                                    <div className="process-step">3</div>
-                                </i>
-                                <h3>Planning</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Recusandae repudiandae,
-                                    omnis odio illo quidem nihil.
-                                </p>
-                            </div>
-                            <div>
-                                <i className="fas fa-thumbs-up fa-4x process-icon my-2">
-                                    <div className="process-step">4</div>
-                                </i>
-                                <h3>Interaction</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Recusandae repudiandae,
-                                    omnis odio illo quidem nihil.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <footer id="main-footer">
                     <div className="footer-content container">
                         <p>Copyright &copy; 2019, All Rights Reserved</p>

@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import about from "../img/about.jpg";
-import envato from "../img/about-logos/logo-envato.png";
-import magento from "../img/about-logos/logo-magento.png";
-import woocommerce from "../img/about-logos/logo-woocommerce.png";
-import wordpress from "../img/about-logos/logo-wordpress.png";
 import person1 from "../img/testimonials/person1.jpg";
 import person2 from "../img/testimonials/person2.jpg";
 import person3 from "../img/testimonials/person3.jpg";
@@ -77,46 +73,7 @@ export default class About extends Component {
                         </div>
                     </div>
                 </section>
-                <section id="about-b" className="bg-dark py-3">
-                    <div className="container">
-                        <h2 className="section-title">Technical Skills</h2>
-                        <div className="bottom-line" />
-                        <h4>Jewelry Making (Casting):</h4>
-                        <div className="progress">
-                            <div style={{ width: "100%" }} />
-                        </div>
-                        <h4>Jewlry Design(Rhino/Matrix):</h4>
-                        <div className="progress">
-                            <div style={{ width: "100%" }} />
-                        </div>
-                        <h4>Adobe Photoshop:</h4>
-                        <div className="progress">
-                            <div style={{ width: "80%" }} />
-                        </div>
-                        <h4>Adobe Illustrator:</h4>
-                        <div className="progress">
-                            <div style={{ width: "70%" }} />
-                        </div>
-                        <h4>Photography:</h4>
-                        <div className="progress">
-                            <div style={{ width: "70%" }} />
-                        </div>
-                        <h4>Adobe After Effects:</h4>
-                        <div className="progress">
-                            <div style={{ width: "50%" }} />
-                        </div>
-                    </div>
-                </section>
-                <section id="about-c" className="py-4 bg-light">
-                    <div className="container">
-                        <div className="about-logos">
-                            <img src={envato} alt="" />
-                            <img src={wordpress} alt="" />
-                            <img src={woocommerce} alt="" />
-                            <img src={magento} alt="" />
-                        </div>
-                    </div>
-                </section>
+
                 <section id="about-d" className="py-4">
                     <div className="container">
                         <h2 className="section-title">Testimonials</h2>
