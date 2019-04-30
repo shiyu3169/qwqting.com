@@ -1,8 +1,17 @@
 import React, { Component } from "react";
 import logo from "../../img/logo.png";
 import { Link } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 export default class Navbar extends Component {
+    state = {
+        jewelries: [
+            { text: "Gallery", to: "gallery" },
+            { text: "Look Book", to: "lookBook" },
+            { text: "Rendering", to: "rendering" }
+        ]
+    };
+
     render() {
         const { current } = this.props;
         return (
@@ -25,6 +34,7 @@ export default class Navbar extends Component {
                         >
                             Jewelry
                         </Link>
+                        <Dropdown items={this.state.jewelries} />
                     </li>
                     <li>
                         <Link

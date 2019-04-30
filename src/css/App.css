@@ -271,6 +271,38 @@ img {
   padding: 1rem 1.5rem;
 }
 
+#main-nav li ul {
+  margin-top: 10px;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+#main-nav li ul li a {
+  color: #000;
+}
+
+#main-nav li:hover ul {
+  opacity: 1;
+  z-index: 1;
+  background: #f4f4f4;
+}
+
+#main-nav li:hover ul li {
+  color: #000;
+}
+
+#main-nav li:hover ul li:hover {
+  cursor: pointer;
+  background: #ccc;
+}
+
+#main-nav li:hover ul li:hover a {
+  border-color: #333;
+}
+
 #main-nav a {
   text-decoration: none;
   color: #fff;
