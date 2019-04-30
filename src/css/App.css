@@ -80,6 +80,22 @@ input[class^="btn-"]:hover {
   padding: 4rem 0;
 }
 
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
 .section-title {
   font-size: 2rem;
   display: block;
@@ -452,38 +468,6 @@ img {
   margin: 1rem;
 }
 
-#about-d .testimonials {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem;
-}
-
-#about-d ul {
-  list-style: none;
-  margin-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#about-d p {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-
-#about-d img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-}
-
 #contact-a .text-fields {
   display: -ms-grid;
   display: grid;
@@ -543,6 +527,30 @@ img {
 #contact-c h1 {
   text-align: center;
   font-size: 4rem;
+}
+
+#work-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#work-a div {
+  display: inline-block;
+  height: 30%;
+  width: 30%;
+}
+
+#work-a div a img:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #main-footer {

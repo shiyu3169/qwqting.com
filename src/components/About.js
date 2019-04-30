@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import about from "../img/about.jpg";
-import person1 from "../img/testimonials/person1.jpg";
-import person2 from "../img/testimonials/person2.jpg";
-import person3 from "../img/testimonials/person3.jpg";
-import person4 from "../img/testimonials/person4.jpg";
 import Navbar from "./utility/Navbar";
 
 export default class About extends Component {
@@ -48,111 +44,28 @@ export default class About extends Component {
                             </div>
                             <div className="award-1">
                                 <i className="fas fa-award fa-3x" />
-                                <h3>Award One</h3>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Sint, maiores.
-                                </p>
+                                <h5>
+                                    SJTA Atlanta Jewelry Show - Ring category
+                                </h5>
+                                <h1>3rd</h1>
                             </div>
                             <div className="award-2">
                                 <i className="fas fa-award fa-3x" />
-                                <h3>Award Two</h3>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Sint, maiores.
-                                </p>
+
+                                <h5>SCAD Rendering Competition</h5>
+                                <h1>1st</h1>
                             </div>
                             <div className="award-3">
                                 <i className="fas fa-award fa-3x" />
-                                <h3>Award Three</h3>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Sint, maiores.
-                                </p>
+                                <h5>
+                                    SJTA Atlanta Jewelry Show - Earring category
+                                </h5>
+                                <h1>3rd</h1>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="about-d" className="py-4">
-                    <div className="container">
-                        <h2 className="section-title">Testimonials</h2>
-                        <div className="bottom-line" />
-                        <p className="lead text-center">
-                            Take a look at what my clients say...
-                        </p>
-                        <div className="testimonials">
-                            <div>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo molestias natus
-                                    repellendus tempora in, illo pariatur
-                                    asperiores mollitia odio reprehenderit
-                                    consequuntur ipsa maiores provident ullam
-                                    porro! Voluptatibus voluptatem soluta
-                                    sapiente?
-                                </p>
-                                <ul>
-                                    <li>
-                                        <img src={person1} alt="Sam" />
-                                    </li>
-                                    <li>Sam Smith, New York</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo molestias natus
-                                    repellendus tempora in, illo pariatur
-                                    asperiores mollitia odio reprehenderit
-                                    consequuntur ipsa maiores provident ullam
-                                    porro! Voluptatibus voluptatem soluta
-                                    sapiente?
-                                </p>
-                                <ul>
-                                    <li>
-                                        <img src={person2} alt="Sara" />
-                                    </li>
-                                    <li>Sara Williams, Michigan</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo molestias natus
-                                    repellendus tempora in, illo pariatur
-                                    asperiores mollitia odio reprehenderit
-                                    consequuntur ipsa maiores provident ullam
-                                    porro! Voluptatibus voluptatem soluta
-                                    sapiente?
-                                </p>
-                                <ul>
-                                    <li>
-                                        <img src={person3} alt="Jill" />
-                                    </li>
-                                    <li>Jill Johnson, London</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Explicabo molestias natus
-                                    repellendus tempora in, illo pariatur
-                                    asperiores mollitia odio reprehenderit
-                                    consequuntur ipsa maiores provident ullam
-                                    porro! Voluptatibus voluptatem soluta
-                                    sapiente?
-                                </p>
-                                <ul>
-                                    <li>
-                                        <img src={person4} alt="Steve" />
-                                    </li>
-                                    <li>Anna Thompson, Boston</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <footer id="main-footer">
                     <div className="footer-content container">
                         <p>Copyright &copy; 2019, All Rights Reserved</p>
