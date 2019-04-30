@@ -27,10 +27,36 @@ export default class Navbar extends Component {
                     </li>
                     <li>
                         <Link
-                            className={current === "work" ? "current" : ""}
-                            to="/work"
+                            className={current === "gallery" ? "current" : ""}
+                            to="/gallery"
                         >
-                            Work
+                            Gallery
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className={current === "rendering" ? "current" : ""}
+                            to="/rendering"
+                        >
+                            Rendering
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className={current === "lookbook" ? "current" : ""}
+                            to="/lookBook"
+                        >
+                            Look Book
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className={
+                                current === "illustration" ? "current" : ""
+                            }
+                            to="/illustration"
+                        >
+                            Illustration
                         </Link>
                     </li>
                     <li>
