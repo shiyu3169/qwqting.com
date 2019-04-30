@@ -20,7 +20,7 @@ export default class Navbar extends Component {
 
                     <li>
                         <Link
-                            className={current === "gallery" ? "current" : ""}
+                            className={current === "jewelry" ? "current" : ""}
                             to="/jewelry"
                         >
                             Jewelry

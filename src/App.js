@@ -4,11 +4,13 @@ import "./css/App.css";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Gallery from "./components/gallery/Gallery";
-import Rendering from "./components/Rendering";
-import LookBook from "./components/LookBook";
-import Illustration from "./components/illustration/Illustration";
+// Jewelry
 import Jewelry from "./components/jewelry/Jewelry";
+import Gallery from "./components/jewelry/Gallery";
+import Rendering from "./components/jewelry/Rendering";
+import LookBook from "./components/jewelry/LookBook";
+// Illustration
+import Illustration from "./components/illustration/Illustration";
 
 function App() {
     return (
