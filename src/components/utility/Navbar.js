@@ -17,36 +17,13 @@ export default class Navbar extends Component {
                             Home
                         </Link>
                     </li>
-                    <li>
-                        <Link
-                            className={current === "about" ? "current" : ""}
-                            to="/about"
-                        >
-                            About
-                        </Link>
-                    </li>
+
                     <li>
                         <Link
                             className={current === "gallery" ? "current" : ""}
-                            to="/gallery"
+                            to="/jewelry"
                         >
-                            Gallery
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            className={current === "rendering" ? "current" : ""}
-                            to="/rendering"
-                        >
-                            Rendering
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            className={current === "lookbook" ? "current" : ""}
-                            to="/lookBook"
-                        >
-                            Look Book
+                            Jewelry
                         </Link>
                     </li>
                     <li>
@@ -61,10 +38,10 @@ export default class Navbar extends Component {
                     </li>
                     <li>
                         <Link
-                            className={current === "contact" ? "current" : ""}
-                            to="contact"
+                            className={current === "about" ? "current" : ""}
+                            to="/about"
                         >
-                            Contact
+                            About
                         </Link>
                     </li>
                 </ul>

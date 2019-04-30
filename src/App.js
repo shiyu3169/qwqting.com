@@ -7,7 +7,8 @@ import Contact from "./components/Contact";
 import Gallery from "./components/gallery/Gallery";
 import Rendering from "./components/Rendering";
 import LookBook from "./components/LookBook";
-import Illustration from "./components/Illustration";
+import Illustration from "./components/illustration/Illustration";
+import Jewelry from "./components/jewelry/Jewelry";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route exact path="/rendering" component={Rendering} />
                 <Route exact path="/lookBook" component={LookBook} />
                 <Route exact path="/illustration" component={Illustration} />
+                <Route exact path="/jewelry" component={Jewelry} />
             </div>
         </Router>
     );

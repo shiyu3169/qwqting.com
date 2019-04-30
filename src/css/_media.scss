@@ -17,7 +17,7 @@
         align-items: center;
 
         li {
-            padding: 1rem;
+            padding: 0.5rem;
         }
     }
 
@@ -141,12 +141,22 @@
     }
 }
 
+// Super small phone Landscape
 @media (max-height: 330px) {
     #header-home {
         .header-content {
             h1 {
                 font-size: 2rem;
             }
+        }
+    }
+}
+
+// Super small phone portrait
+@media (max-width: 330px) {
+    #main-nav {
+        li {
+            padding: 0.2rem;
         }
     }
 }

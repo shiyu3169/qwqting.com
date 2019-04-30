@@ -639,7 +639,7 @@ img {
             align-items: center;
   }
   #main-nav li {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   #header-home {
     height: 10rem;
@@ -716,6 +716,12 @@ img {
 @media (max-height: 330px) {
   #header-home .header-content h1 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 330px) {
+  #main-nav li {
+    padding: 0.2rem;
   }
 }
 /*# sourceMappingURL=app.css.map */
