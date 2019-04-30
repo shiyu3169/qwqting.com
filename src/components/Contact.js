@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import Navbar from "./utility/Navbar";
 
 export default class Contact extends Component {
     render() {
@@ -7,29 +7,7 @@ export default class Contact extends Component {
             <div>
                 <header id="header-inner">
                     <div className="container">
-                        <nav id="main-nav">
-                            <img
-                                src="img/logo.png"
-                                alt="My portfolio"
-                                id="logo"
-                            />
-                            <ul>
-                                <li>
-                                    <Link to="/">Home</Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">About</Link>
-                                </li>
-                                <li>
-                                    <Link to="/work">Work</Link>
-                                </li>
-                                <li>
-                                    <Link to="contact" className="current">
-                                        Contact
-                                    </Link>
-                                </li>
-                            </ul>
-                        </nav>
+                        <Navbar current="contact" />
                     </div>
                 </header>
                 <section id="contact-a" className="text-center py-3">

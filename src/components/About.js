@@ -1,5 +1,14 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import about from "../img/about.jpg";
+import envato from "../img/about-logos/logo-envato.png";
+import magento from "../img/about-logos/logo-magento.png";
+import woocommerce from "../img/about-logos/logo-woocommerce.png";
+import wordpress from "../img/about-logos/logo-wordpress.png";
+import person1 from "../img/testimonials/person1.jpg";
+import person2 from "../img/testimonials/person2.jpg";
+import person3 from "../img/testimonials/person3.jpg";
+import person4 from "../img/testimonials/person4.jpg";
+import Navbar from "./utility/Navbar";
 
 export default class About extends Component {
     render() {
@@ -7,29 +16,7 @@ export default class About extends Component {
             <div>
                 <header id="header-inner">
                     <div className="container">
-                        <nav id="main-nav">
-                            <img
-                                src="img/logo.png"
-                                alt="My portfolio"
-                                id="logo"
-                            />
-                            <ul>
-                                <li>
-                                    <Link to="/">Home</Link>
-                                </li>
-                                <li>
-                                    <Link to="/about" className="current">
-                                        About
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/work">Work</Link>
-                                </li>
-                                <li>
-                                    <Link to="contact">Contact</Link>
-                                </li>
-                            </ul>
-                        </nav>
+                        <Navbar current="about" />
                     </div>
                 </header>
                 <section id="about-a" className="text-center py-3">
@@ -42,7 +29,7 @@ export default class About extends Component {
                         </p>
                         <div className="about-info">
                             <img
-                                src="img/about.jpg"
+                                src={about}
                                 alt="Qiuting"
                                 className="bio-image"
                             />
@@ -117,19 +104,10 @@ export default class About extends Component {
                 <section id="about-c" className="py-4 bg-light">
                     <div className="container">
                         <div className="about-logos">
-                            <img src="img/about-logos/logo-envato.png" alt="" />
-                            <img
-                                src="img/about-logos/logo-wordpress.png"
-                                alt=""
-                            />
-                            <img
-                                src="img/about-logos/logo-woocommerce.png"
-                                alt=""
-                            />
-                            <img
-                                src="img/about-logos/logo-magento.png"
-                                alt=""
-                            />
+                            <img src={envato} alt="" />
+                            <img src={wordpress} alt="" />
+                            <img src={woocommerce} alt="" />
+                            <img src={magento} alt="" />
                         </div>
                     </div>
                 </section>
@@ -153,10 +131,7 @@ export default class About extends Component {
                                 </p>
                                 <ul>
                                     <li>
-                                        <img
-                                            src="img/testimonials/person1.jpg"
-                                            alt="Sam"
-                                        />
+                                        <img src={person1} alt="Sam" />
                                     </li>
                                     <li>Sam Smith, New York</li>
                                 </ul>
@@ -173,10 +148,7 @@ export default class About extends Component {
                                 </p>
                                 <ul>
                                     <li>
-                                        <img
-                                            src="img/testimonials/person2.jpg"
-                                            alt="Sara"
-                                        />
+                                        <img src={person2} alt="Sara" />
                                     </li>
                                     <li>Sara Williams, Michigan</li>
                                 </ul>
@@ -193,10 +165,7 @@ export default class About extends Component {
                                 </p>
                                 <ul>
                                     <li>
-                                        <img
-                                            src="img/testimonials/person3.jpg"
-                                            alt="Jill"
-                                        />
+                                        <img src={person3} alt="Jill" />
                                     </li>
                                     <li>Jill Johnson, London</li>
                                 </ul>
@@ -213,10 +182,7 @@ export default class About extends Component {
                                 </p>
                                 <ul>
                                     <li>
-                                        <img
-                                            src="img/testimonials/person4.jpg"
-                                            alt="Steve"
-                                        />
+                                        <img src={person4} alt="Steve" />
                                     </li>
                                     <li>Anna Thompson, Boston</li>
                                 </ul>

@@ -1,5 +1,14 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import Navbar from "./utility/Navbar";
+import item1 from "../img/items/item1.png";
+import item2 from "../img/items/item2.png";
+import item3 from "../img/items/item3.png";
+import item4 from "../img/items/item4.png";
+import item5 from "../img/items/item5.png";
+import item6 from "../img/items/item6.png";
+import item7 from "../img/items/item7.png";
+import item8 from "../img/items/item8.png";
+import item9 from "../img/items/item9.png";
 
 export default class Work extends Component {
     render() {
@@ -7,29 +16,7 @@ export default class Work extends Component {
             <div>
                 <header id="header-inner">
                     <div className="container">
-                        <nav id="main-nav">
-                            <img
-                                src="img/logo.png"
-                                alt="My portfolio"
-                                id="logo"
-                            />
-                            <ul>
-                                <li>
-                                    <Link to="/">Home</Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">About</Link>
-                                </li>
-                                <li>
-                                    <Link to="/work" className="current">
-                                        Work
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="contact">Contact</Link>
-                                </li>
-                            </ul>
-                        </nav>
+                        <Navbar current="work" />
                     </div>
                 </header>
                 <section id="work-a" className="text-center py-3">
@@ -40,7 +27,7 @@ export default class Work extends Component {
                         <div className="items">
                             <div className="item">
                                 <div className="item-image">
-                                    <img src="img/items/item1.png" alt="" />
+                                    <img src={item1} alt="" />
                                 </div>
                                 <div className="item-text">
                                     <div className="item-text-wrap">
@@ -55,7 +42,7 @@ export default class Work extends Component {
                             </div>
                             <div className="item">
                                 <div className="item-image">
-                                    <img src="img/items/item2.png" alt="" />
+                                    <img src={item2} alt="" />
                                 </div>
                                 <div className="item-text">
                                     <div className="item-text-wrap">
@@ -70,7 +57,7 @@ export default class Work extends Component {
                             </div>
                             <div className="item">
                                 <div className="item-image">
-                                    <img src="img/items/item3.png" alt="" />
+                                    <img src={item3} alt="" />
                                 </div>
                                 <div className="item-text">
                                     <div className="item-text-wrap">
@@ -85,7 +72,7 @@ export default class Work extends Component {
                             </div>
                             <div className="item">
                                 <div className="item-image">
-                                    <img src="img/items/item4.png" alt="" />
+                                    <img src={item4} alt="" />
                                 </div>
                                 <div className="item-text">
                                     <div className="item-text-wrap">
@@ -100,7 +87,7 @@ export default class Work extends Component {
                             </div>
                             <div className="item">
                                 <div className="item-image">
-                                    <img src="img/items/item5.png" alt="" />
+                                    <img src={item5} alt="" />
                                 </div>
                                 <div className="item-text">
                                     <div className="item-text-wrap">
@@ -115,7 +102,7 @@ export default class Work extends Component {
                             </div>
                             <div className="item">
                                 <div className="item-image">
-                                    <img src="img/items/item6.png" alt="" />
+                                    <img src={item6} alt="" />
                                 </div>
                                 <div className="item-text">
                                     <div className="item-text-wrap">
@@ -130,7 +117,7 @@ export default class Work extends Component {
                             </div>
                             <div className="item">
                                 <div className="item-image">
-                                    <img src="img/items/item7.png" alt="" />
+                                    <img src={item7} alt="" />
                                 </div>
                                 <div className="item-text">
                                     <div className="item-text-wrap">
@@ -145,7 +132,7 @@ export default class Work extends Component {
                             </div>
                             <div className="item">
                                 <div className="item-image">
-                                    <img src="img/items/item8.png" alt="" />
+                                    <img src={item8} alt="" />
                                 </div>
                                 <div className="item-text">
                                     <div className="item-text-wrap">
@@ -160,7 +147,7 @@ export default class Work extends Component {
                             </div>
                             <div className="item">
                                 <div className="item-image">
-                                    <img src="img/items/item9.png" alt="" />
+                                    <img src={item9} alt="" />
                                 </div>
                                 <div className="item-text">
                                     <div className="item-text-wrap">

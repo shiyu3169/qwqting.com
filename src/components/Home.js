@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import logo from "../img/logo.png";
 import { Link } from "react-router-dom";
+import Navbar from "./utility/Navbar";
 
 export default class Home extends Component {
     state = {
@@ -60,31 +60,13 @@ export default class Home extends Component {
             <div>
                 <header id="header-home">
                     <div className="container">
-                        <nav id="main-nav">
-                            <img src={logo} alt="My portfolio" id="logo" />
-                            <ul>
-                                <li>
-                                    <Link to="/" className="current">
-                                        Home
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">About</Link>
-                                </li>
-                                <li>
-                                    <Link to="/work">Work</Link>
-                                </li>
-                                <li>
-                                    <Link to="contact">Contact</Link>
-                                </li>
-                            </ul>
-                        </nav>
+                        <Navbar current="home" />
                         <div className="header-content">
                             <h1>
-                                I Am Qiuting The
+                                I Am Qiuting Wang
                                 <br />
                                 <span className="txt-type">
-                                    {this.state.txt}
+                                    The {this.state.txt}
                                 </span>
                             </h1>
                             <p className="lead">
