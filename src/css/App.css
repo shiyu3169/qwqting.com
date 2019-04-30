@@ -662,6 +662,17 @@ img {
   #contact-c h1 {
     font-size: 2rem;
   }
+  #work-a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 90vh;
+  }
+  #work-a div {
+    height: unset;
+    width: 80%;
+  }
   #main-footer {
     height: 7rem;
   }
