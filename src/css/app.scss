@@ -225,6 +225,9 @@ img {
             grid-area: bio;
             border-left: 3px solid $main-color;
             padding: 0.8rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
         }
 
         .award-1 {

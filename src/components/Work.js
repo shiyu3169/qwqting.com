@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Navbar from "./utility/Navbar";
-import item1 from "../img/items/item1.png";
-import item2 from "../img/items/item2.png";
-import item3 from "../img/items/item3.png";
-import item4 from "../img/items/item4.png";
-import item5 from "../img/items/item5.png";
-import item6 from "../img/items/item6.png";
-import item7 from "../img/items/item7.png";
-import item8 from "../img/items/item8.png";
-import item9 from "../img/items/item9.png";
+import item1 from "../img/items/item1.jpg";
+import item2 from "../img/items/item2.jpg";
+import item3 from "../img/items/item3.jpg";
+import item4 from "../img/items/item4.jpg";
+import item5 from "../img/items/item5.jpg";
+import item6 from "../img/items/item6.jpg";
+import item7 from "../img/items/item7.jpg";
+import item8 from "../img/items/item8.jpg";
+import item9 from "../img/items/item9.jpg";
 
 export default class Work extends Component {
     render() {
