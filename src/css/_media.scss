@@ -10,6 +10,9 @@
 // Smartphones
 
 @media (max-width: 500px) {
+    #backToTop.btn-dark {
+        padding: 0.8rem 1rem;
+    }
     // Navbar
     #main-nav {
         flex-direction: column;

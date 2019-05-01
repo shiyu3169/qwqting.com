@@ -3,11 +3,13 @@ import Navbar from "./utility/Navbar";
 import Typer from "./utility/Typer";
 import Work from "./Work";
 import About from "./About";
+import BackToTop from "./utility/BackToTop";
 
 export default class Home extends Component {
     render() {
         return (
             <div>
+                <BackToTop />
                 <header id="header-home">
                     <div className="container">
                         <Navbar current="home" />

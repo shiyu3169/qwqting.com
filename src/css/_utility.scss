@@ -30,6 +30,11 @@
         color: #f4f4f4;
         background-color: $dark-color;
     }
+    &-medium {
+        @extend %btn-shared;
+        color: #f4f4f4;
+        background-color: $dark-color;
+    }
 }
 
 button[class^="btn-"]:hover,
