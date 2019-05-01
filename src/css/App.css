@@ -309,6 +309,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 1rem;
+  top: 0;
 }
 
 #main-nav ul {
@@ -322,6 +323,7 @@ img {
 }
 
 #main-nav li ul {
+  margin-top: 1rem;
   visibility: hidden;
   position: absolute;
   display: block;
@@ -378,7 +380,7 @@ img {
 }
 
 #header-home {
-  background: url(../img/jewelry/jewelry.jpg) no-repeat center right/cover;
+  background: url(../img/showcase.jpg) no-repeat center right/cover;
   height: 100vh;
   color: #fff;
 }
@@ -394,7 +396,7 @@ img {
 }
 
 #header-inner {
-  background: url(../img/jewelry/jewelry.jpg) no-repeat 20% 30%/cover;
+  background: url(../img/showcase.jpg) no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solod #ffbc00;
 }
@@ -563,11 +565,16 @@ img {
   font-size: 4rem;
 }
 
+#work {
+  background: #ccc;
+  height: 100vh;
+}
+
 #work-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
+  height: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

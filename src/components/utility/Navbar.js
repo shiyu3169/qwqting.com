@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "../../img/logo.png";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import Dropdown from "./Dropdown";
 
 export default class Navbar extends Component {
@@ -15,7 +15,7 @@ export default class Navbar extends Component {
     render() {
         const { current } = this.props;
         return (
-            <nav id="main-nav">
+            <nav id="main-nav" className="sticky-top">
                 <img src={logo} alt="My portfolio" id="logo" />
                 <ul>
                     <li>
@@ -47,12 +47,12 @@ export default class Navbar extends Component {
                         </Link>
                     </li>
                     <li>
-                        <a
+                        <Link
                             className={current === "about" ? "current" : ""}
-                            href="#about-a"
+                            to="/#about-a"
                         >
                             About
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>

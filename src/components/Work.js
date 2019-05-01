@@ -23,7 +23,6 @@ export default class Work extends Component {
                         <Link to="/illustration">
                             <img src={illustration} alt="illustration" />
                         </Link>
-
                         <h1>Illustration</h1>
                     </div>
                 </section>

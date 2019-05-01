@@ -47,7 +47,7 @@ img {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
-
+    top: 0;
     ul {
         display: flex;
     }
@@ -55,6 +55,7 @@ img {
     li {
         padding: 1rem 1.5rem;
         ul {
+            margin-top: 1rem;
             visibility: hidden;
             position: absolute;
             display: block;
@@ -299,9 +300,11 @@ img {
 
 // Work Section
 #work {
+    background: $medium-color;
+    height: 100vh;
     &-a {
         display: flex;
-        height: 80vh;
+        height: 50%;
         align-items: center;
         justify-content: space-evenly;
         div {
