@@ -148,6 +148,11 @@ img {
 #home {
     // Home Section A
     &-a {
+        .container {
+            #work {
+                display: none;
+            }
+        }
         .specials {
             margin-top: 3rem;
             display: grid;

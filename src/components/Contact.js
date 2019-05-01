@@ -5,11 +5,6 @@ export default class Contact extends Component {
     render() {
         return (
             <div>
-                <header id="header-inner">
-                    <div className="container">
-                        <Navbar current="contact" />
-                    </div>
-                </header>
                 <section id="contact-a" className="text-center py-3">
                     <div className="container">
                         <h2 className="section-title">Contact Me</h2>
@@ -86,17 +81,6 @@ export default class Contact extends Component {
                         <h1>Let's Start Your Next Project</h1>
                     </div>
                 </div>
-                <footer id="main-footer">
-                    <div className="footer-content container">
-                        <p>Copyright &copy; 2019, All Rights Reserved</p>
-                        <div className="social">
-                            <i className="fab fa-twitter" />
-                            <i className="fab fa-facebook" />
-                            <i className="fab fa-instagram" />
-                            <i className="fab fa-linkedin" />
-                        </div>
-                    </div>
-                </footer>
             </div>
         );
     }

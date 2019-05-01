@@ -51,6 +51,11 @@
 
     #home {
         &-a {
+            .container {
+                #work {
+                    display: inline-block;
+                }
+            }
             .specials div {
                 border-bottom: 1px $light-color solid;
                 padding-bottom: 1rem;

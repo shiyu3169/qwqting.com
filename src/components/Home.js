@@ -35,6 +35,9 @@ export default class Home extends Component {
                 </header>
                 <section id="home-a" className="text-center py-2">
                     <div className="container">
+                        <Link to="/work" className="btn-light mb-1" id="work">
+                            View My Work
+                        </Link>
                         <h2 className="section-title">I Specialize In</h2>
                         <div className="bottom-line" />
                         <p className="lead">

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import about from "../img/about.jpg";
 import Navbar from "./utility/Navbar";
+import Contact from "./Contact";
 
 export default class About extends Component {
     render() {
@@ -65,7 +66,7 @@ export default class About extends Component {
                         </div>
                     </div>
                 </section>
-
+                <Contact />
                 <footer id="main-footer">
                     <div className="footer-content container">
                         <p>Copyright &copy; 2019, All Rights Reserved</p>
