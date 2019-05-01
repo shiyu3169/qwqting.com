@@ -1,8 +1,6 @@
 // Tablets & Smaller
 @media (max-width: 800px) {
     #header-home {
-        height: 30rem;
-
         .header-content {
             padding-top: 5rem;
         }
@@ -24,11 +22,13 @@
 
     #header {
         &-home {
-            height: 50vh;
             border-bottom: 3px solid $main-color;
             background-position: 50% 30%;
             .header-content {
-                display: none;
+                h1 {
+                    font-size: 2rem;
+                    line-height: 1.2;
+                }
             }
         }
 
@@ -51,11 +51,6 @@
 
     #home {
         &-a {
-            .container {
-                #work {
-                    display: inline-block;
-                }
-            }
             .specials div {
                 border-bottom: 1px $light-color solid;
                 padding-bottom: 1rem;

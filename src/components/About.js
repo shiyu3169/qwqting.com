@@ -1,22 +1,15 @@
 import React, { Component } from "react";
 import about from "../img/about.jpg";
-import Navbar from "./utility/Navbar";
 import Contact from "./Contact";
 
 export default class About extends Component {
     render() {
         return (
             <div>
-                <header id="header-inner">
-                    <div className="container">
-                        <Navbar current="about" />
-                    </div>
-                </header>
                 <section id="about-a" className="text-center py-3">
                     <div className="container">
                         <h2 className="section-title">About Me</h2>
                         <div className="bottom-line" />
-
                         <div className="about-info">
                             <img
                                 src={about}
@@ -67,17 +60,6 @@ export default class About extends Component {
                     </div>
                 </section>
                 <Contact />
-                <footer id="main-footer">
-                    <div className="footer-content container">
-                        <p>Copyright &copy; 2019, All Rights Reserved</p>
-                        <div className="social">
-                            <i className="fab fa-twitter" />
-                            <i className="fab fa-facebook" />
-                            <i className="fab fa-instagram" />
-                            <i className="fab fa-linkedin" />
-                        </div>
-                    </div>
-                </footer>
             </div>
         );
     }

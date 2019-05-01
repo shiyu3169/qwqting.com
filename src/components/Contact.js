@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "./utility/Navbar";
 
 export default class Contact extends Component {
     render() {

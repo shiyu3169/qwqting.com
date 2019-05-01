@@ -136,6 +136,7 @@ input[class^="btn-"]:hover {
     font-size: 2rem;
     display: block;
     padding-bottom: 0.5rem;
+    padding-top: 4rem;
     text-align: center;
     font-weight: 100;
     text-transform: uppercase;
@@ -146,5 +147,5 @@ input[class^="btn-"]:hover {
     width: 3rem;
     background: $main-color;
     display: block;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 2rem auto;
 }

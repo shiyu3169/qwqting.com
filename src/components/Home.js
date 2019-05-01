@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Navbar from "./utility/Navbar";
 import Typer from "./utility/Typer";
+import Work from "./Work";
+import About from "./About";
 
 export default class Home extends Component {
     render() {
@@ -23,115 +24,14 @@ export default class Home extends Component {
                                     ]}
                                 />
                             </h1>
-                            <p className="lead">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit.
-                            </p>
-                            <Link to="/work" className="btn-light">
+                            <a href="#work" className="btn-light my-4">
                                 View My Work
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </header>
-                <section id="home-a" className="text-center py-2">
-                    <div className="container">
-                        <Link to="/work" className="btn-light mb-1" id="work">
-                            View My Work
-                        </Link>
-                        <h2 className="section-title">I Specialize In</h2>
-                        <div className="bottom-line" />
-                        <p className="lead">
-                            Jewelry design/making as well as illustation and
-                            photography
-                        </p>
-                        <div className="specials">
-                            <div>
-                                <i className="fas fa-gem fa-2x" />
-                                <h3>Jewelry Design</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Fugiat quisquam doloremque
-                                    ea ullam vitae autem mollitia repudiandae
-                                    nihil, alias cupiditate?
-                                </p>
-                            </div>
-
-                            <div>
-                                <i className="fas fa-ring fa-2x" />
-                                <h3>Jewelry Making</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Fugiat quisquam doloremque
-                                    ea ullam vitae autem mollitia repudiandae
-                                    nihil, alias cupiditate?
-                                </p>
-                            </div>
-                            <div>
-                                <i className="fas fa-palette fa-2x" />
-                                <h3>Illustration</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Fugiat quisquam doloremque
-                                    ea ullam vitae autem mollitia repudiandae
-                                    nihil, alias cupiditate?
-                                </p>
-                            </div>
-                            <div>
-                                <i className="fab fa-adobe fa-2x" />
-                                <h3>Photography</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Fugiat quisquam doloremque
-                                    ea ullam vitae autem mollitia repudiandae
-                                    nihil, alias cupiditate?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="home-b" className="text-center py-2">
-                    <div className="stats">
-                        <div>
-                            <ul>
-                                <li>
-                                    <i className="fas fa-users fa-3x" />
-                                </li>
-                                <li className="stats-title">Followers</li>
-                                <li className="stats-number">2000+</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>
-                                    <i className="fas fa-award fa-3x" />
-                                </li>
-                                <li className="stats-title">Awards</li>
-                                <li className="stats-number">3</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>
-                                    <i className="fas fa-hourglass-start fa-3x" />
-                                </li>
-                                <li className="stats-title">Hours Worked</li>
-                                <li className="stats-number">15k+</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>
-                                    <i className="fas fa-users fa-3x" />
-                                </li>
-                                <li className="stats-title">
-                                    Projects Completed
-                                </li>
-                                <li className="stats-number">100+</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
+                <Work />
+                <About />
                 <footer id="main-footer">
                     <div className="footer-content container">
                         <p>Copyright &copy; 2019, All Rights Reserved</p>

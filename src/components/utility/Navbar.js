@@ -47,12 +47,12 @@ export default class Navbar extends Component {
                         </Link>
                     </li>
                     <li>
-                        <Link
+                        <a
                             className={current === "about" ? "current" : ""}
-                            to="/about"
+                            href="#about-a"
                         >
                             About
-                        </Link>
+                        </a>
                     </li>
                 </ul>
             </nav>
