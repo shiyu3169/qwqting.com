@@ -24,9 +24,9 @@
 
     #header {
         &-home {
-            height: 10rem;
+            height: 50vh;
             border-bottom: 3px solid $main-color;
-            background-position: 20% 30%;
+            background-position: 50% 30%;
             .header-content {
                 display: none;
             }

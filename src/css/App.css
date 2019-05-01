@@ -646,9 +646,9 @@ img {
     padding: 0.5rem;
   }
   #header-home {
-    height: 10rem;
+    height: 50vh;
     border-bottom: 3px solid #ffbc00;
-    background-position: 20% 30%;
+    background-position: 50% 30%;
   }
   #header-home .header-content {
     display: none;
