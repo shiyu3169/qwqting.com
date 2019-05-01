@@ -75,11 +75,6 @@ export default class Contact extends Component {
                         </div>
                     </div>
                 </section>
-                <div id="contact-c" className="bg-main py-4">
-                    <div className="container">
-                        <h1>Let's Start Your Next Project</h1>
-                    </div>
-                </div>
             </div>
         );
     }
