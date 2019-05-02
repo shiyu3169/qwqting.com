@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Navbar from "../utility/Navbar";
-import gallery from "../../img/jewelry/jewelry.jpg";
+import gallery from "../../img/jewelry/illusion.jpg";
+import rendering from "../../img/jewelry/rendering.jpg";
+import lookBook from "../../img/jewelry/lookBook.jpg";
+
 export default class Jewelry extends Component {
     render() {
         return (
@@ -17,15 +20,15 @@ export default class Jewelry extends Component {
                         <div id="collections">
                             <div className="text-center">
                                 <img src={gallery} alt="Gallery" />
-                                <h3>Illusion</h3>
+                                <h3>Gallery</h3>
                             </div>
                             <div className="text-center">
-                                <img src={gallery} alt="Gallery" />
-                                <h3>Nurturing Nature</h3>
+                                <img src={rendering} alt="Gallery" />
+                                <h3>Rendering</h3>
                             </div>
                             <div className="text-center">
-                                <img src={gallery} alt="Gallery" />
-                                <h3>One of a Kind</h3>
+                                <img src={lookBook} alt="Gallery" />
+                                <h3>Look Book</h3>
                             </div>
                         </div>
                     </div>

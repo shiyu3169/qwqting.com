@@ -329,6 +329,7 @@ img {
             width: 30%;
             a {
                 img {
+                    border-radius: 5px;
                     &:hover {
                         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
                             0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -346,6 +347,15 @@ img {
     justify-content: space-between;
     div {
         width: 30%;
+        img {
+            border: 1px solid $medium-color;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
     }
 }
 
