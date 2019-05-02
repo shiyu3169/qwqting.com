@@ -339,6 +339,16 @@ img {
     }
 }
 
+// Jewelry
+#collections {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 30%;
+    }
+}
+
 // Footer
 #main-footer {
     background: $dark-color;
@@ -349,6 +359,17 @@ img {
         display: flex;
         justify-content: space-between;
         height: 5rem;
+        align-items: center;
+    }
+}
+
+#sub-footer {
+    background: #525252;
+    .container {
+        max-width: 1600px;
+        display: flex;
+        justify-content: space-between;
+        height: 15rem;
         align-items: center;
 
         .social .fab {

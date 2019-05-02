@@ -7,7 +7,7 @@ export default class Gallery extends Component {
             <div>
                 <header id="header-inner">
                     <div className="container">
-                        <Navbar current="gallery" />
+                        <Navbar current="collections" />
                     </div>
                 </header>
             </div>

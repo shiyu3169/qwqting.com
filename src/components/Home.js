@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Navbar from "./utility/Navbar";
 import Typer from "./utility/Typer";
 import Work from "./Work";
-import About from "./About";
 
 export default class Home extends Component {
     render() {
@@ -33,17 +32,6 @@ export default class Home extends Component {
                     </div>
                 </header>
                 <Work />
-                <footer id="main-footer">
-                    <div className="footer-content container">
-                        <p>Copyright &copy; 2019, All Rights Reserved</p>
-                        <div className="social">
-                            <i className="fab fa-twitter" />
-                            <i className="fab fa-facebook" />
-                            <i className="fab fa-instagram" />
-                            <i className="fab fa-linkedin" />
-                        </div>
-                    </div>
-                </footer>
             </div>
         );
     }

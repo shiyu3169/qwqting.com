@@ -13,6 +13,8 @@ import Rendering from "./components/jewelry/Rendering";
 import LookBook from "./components/jewelry/LookBook";
 // Illustration
 import Illustration from "./components/illustration/Illustration";
+import Footer from "./components/utility/Footer";
+import SubFooter from "./components/utility/SubFooter";
 
 function App() {
     return (
@@ -30,6 +32,8 @@ function App() {
                 <Route exact path="/rendering" component={Rendering} />
                 {/* Illustration */}
                 <Route exact path="/illustration" component={Illustration} />
+                <SubFooter />
+                <Footer />
             </div>
         </Router>
     );
