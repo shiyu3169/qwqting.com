@@ -15,11 +15,12 @@ import LookBook from "./components/jewelry/LookBook";
 import Illustration from "./components/illustration/Illustration";
 import Footer from "./components/utility/Footer";
 import SubFooter from "./components/utility/SubFooter";
+import ScrollToTop from "./components/utility/ScrollToTop";
 
 function App() {
     return (
         <Router>
-            <div>
+            <ScrollToTop>
                 {/* Main */}
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
@@ -34,7 +35,7 @@ function App() {
                 <Route exact path="/illustration" component={Illustration} />
                 <SubFooter />
                 <Footer />
-            </div>
+            </ScrollToTop>
         </Router>
     );
 }
