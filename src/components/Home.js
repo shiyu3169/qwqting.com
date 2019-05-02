@@ -33,7 +33,6 @@ export default class Home extends Component {
                     </div>
                 </header>
                 <Work />
-                <About />
                 <footer id="main-footer">
                     <div className="footer-content container">
                         <p>Copyright &copy; 2019, All Rights Reserved</p>

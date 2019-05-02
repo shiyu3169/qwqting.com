@@ -49,7 +49,7 @@ export default class Navbar extends Component {
                     <li>
                         <Link
                             className={current === "about" ? "current" : ""}
-                            to="/#about-a"
+                            to="/about"
                         >
                             About
                         </Link>

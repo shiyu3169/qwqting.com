@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 import about from "../img/about.jpg";
 import Contact from "./Contact";
+import Navbar from "./utility/Navbar";
 
 export default class About extends Component {
     render() {
         return (
-            <div id="about">
+            <div>
+                <header id="header-inner">
+                    <div className="container">
+                        <Navbar current="jewelry" />
+                    </div>
+                </header>
                 <section id="about-a" className="text-center">
                     <div className="container">
                         <h2 className="section-title">About Me</h2>
