@@ -23,6 +23,19 @@
             }
         }
     }
+
+    // Items
+    .items {
+        grid-template-columns: 1fr;
+
+        .item {
+            text-align: center;
+            img {
+                border: 1px solid $medium-color;
+                border-radius: 5px;
+            }
+        }
+    }
 }
 
 // Smartphones

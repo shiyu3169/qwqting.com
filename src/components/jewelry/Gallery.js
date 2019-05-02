@@ -15,38 +15,38 @@ export default class Gallery extends Component {
                 </header>
                 <div className="my-4">
                     <section className="container">
-                        <div class="items">
-                            <div class="item">
-                                <div class="item-image">
+                        <div className="items">
+                            <div className="item">
+                                <div className="item-image">
                                     <img src={illusion1} alt="Illusion" />
                                 </div>
-                                <div class="item-text">
-                                    <div class="item-text-wrap">
-                                        <h2 class="item-text-title">
+                                <div className="item-text">
+                                    <div className="item-text-wrap">
+                                        <h2 className="item-text-title">
                                             Illusion
                                         </h2>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
+                            <div className="item">
+                                <div className="item-image">
                                     <img src={nn1} alt="Nurturing Nature" />
                                 </div>
-                                <div class="item-text">
-                                    <div class="item-text-wrap">
-                                        <h2 class="item-text-title">
+                                <div className="item-text">
+                                    <div className="item-text-wrap">
+                                        <h2 className="item-text-title">
                                             Nurturing Nature
                                         </h2>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="item-image">
+                            <div className="item">
+                                <div className="item-image">
                                     <img src={one1} alt="" />
                                 </div>
-                                <div class="item-text">
-                                    <div class="item-text-wrap">
-                                        <h2 class="item-text-title">
+                                <div className="item-text">
+                                    <div className="item-text-wrap">
+                                        <h2 className="item-text-title">
                                             One Of A Kind
                                         </h2>
                                     </div>
