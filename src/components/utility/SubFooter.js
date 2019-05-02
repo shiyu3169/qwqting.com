@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-
+import logo from "../../img/logo.png";
 export default class SubFooter extends Component {
     render() {
         return (
             <div id="sub-footer">
                 <div className="container">
                     <div>
-                        <img src="" alt="logo" />
+                        <img id="logo" src={logo} alt="logo" />
                     </div>
                     <div>
                         <h2>Jewelry</h2>

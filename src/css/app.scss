@@ -357,21 +357,24 @@ img {
 
     .footer-content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         height: 5rem;
         align-items: center;
     }
 }
 
 #sub-footer {
-    background: #525252;
+    background: $dark-color;
+    color: set-text-color($dark-color);
     .container {
         max-width: 1600px;
         display: flex;
         justify-content: space-between;
         height: 15rem;
         align-items: center;
-
+        ul {
+            text-align: center;
+        }
         .social .fab {
             margin-right: 1rem;
             border: 2px #fff solid;

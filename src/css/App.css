@@ -636,9 +636,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -646,7 +646,8 @@ img {
 }
 
 #sub-footer {
-  background: #525252;
+  background: #333;
+  color: #fff;
 }
 
 #sub-footer .container {
@@ -661,6 +662,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#sub-footer .container ul {
+  text-align: center;
 }
 
 #sub-footer .container .social .fab {
