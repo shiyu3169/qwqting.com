@@ -5,8 +5,8 @@ import Contact from "./Contact";
 export default class About extends Component {
     render() {
         return (
-            <div>
-                <section id="about-a" className="text-center py-3">
+            <div id="about">
+                <section id="about-a" className="text-center">
                     <div className="container">
                         <h2 className="section-title">About Me</h2>
                         <div className="bottom-line" />
@@ -35,26 +35,6 @@ export default class About extends Component {
                                     of timeless beauty with people who love
                                     jewelry as art.​
                                 </p>
-                            </div>
-                            <div className="award-1">
-                                <i className="fas fa-award fa-3x" />
-                                <h5>
-                                    SJTA Atlanta Jewelry Show - Ring category
-                                </h5>
-                                <h1>3rd</h1>
-                            </div>
-                            <div className="award-2">
-                                <i className="fas fa-award fa-3x" />
-
-                                <h5>SCAD Rendering Competition</h5>
-                                <h1>1st</h1>
-                            </div>
-                            <div className="award-3">
-                                <i className="fas fa-award fa-3x" />
-                                <h5>
-                                    SJTA Atlanta Jewelry Show - Earring category
-                                </h5>
-                                <h1>3rd</h1>
                             </div>
                         </div>
                     </div>

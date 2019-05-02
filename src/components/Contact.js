@@ -4,7 +4,7 @@ export default class Contact extends Component {
     render() {
         return (
             <div>
-                <section id="contact-a" className="text-center py-3">
+                <section id="contact-a" className="text-center">
                     <div className="container">
                         <h2 className="section-title">Contact Me</h2>
                         <div className="bottom-line" />
@@ -44,11 +44,11 @@ export default class Contact extends Component {
                                     placeholder="Enter Message"
                                     name="message"
                                 />
-                                <div className="my-2">
+                                <div>
                                     <div data-netlify-recaptcha="true" />
                                 </div>
                             </div>
-                            <button type="submit" className="btn-dark">
+                            <button type="submit" className="btn-dark mb-2">
                                 Submit
                             </button>
                         </form>

@@ -334,7 +334,6 @@ img {
 }
 
 #main-nav li ul {
-  margin-top: 1rem;
   visibility: hidden;
   position: absolute;
   display: block;
@@ -391,19 +390,27 @@ img {
 }
 
 #header-home {
-  background: url(../img/showcase.jpg) no-repeat center right/cover;
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
   height: 100vh;
   color: #fff;
 }
 
 #header-home .header-content {
   text-align: center;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 #header-home .header-content h1 {
   font-size: 4rem;
   line-height: 1.2;
+}
+
+#header-home .header-content div a {
+  display: inline-block;
+  width: 150px;
+  margin-left: -100px;
+  position: absolute;
+  bottom: 10%;
 }
 
 #header-inner {
@@ -641,7 +648,7 @@ img {
 
 @media (max-width: 800px) {
   #header-home .header-content {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 }
 
@@ -739,8 +746,20 @@ img {
 }
 
 @media (max-height: 580px) {
+  .section-title {
+    padding-top: 3rem;
+  }
   #header-home .header-content {
     padding-top: 3rem;
+  }
+  #header-home .header-content div a {
+    bottom: 0;
+  }
+  #header-home h1 {
+    display: none;
+  }
+  #work-a {
+    height: 0;
   }
 }
 
