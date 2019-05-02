@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../utility/Navbar";
 import gallery from "../../img/jewelry/illusion.jpg";
 import rendering from "../../img/jewelry/rendering.jpg";
@@ -19,16 +20,22 @@ export default class Jewelry extends Component {
                         <div className="bottom-line" />
                         <div id="collections">
                             <div className="text-center">
-                                <img src={gallery} alt="Gallery" />
-                                <h3>Gallery</h3>
+                                <Link to="/gallery">
+                                    <img src={gallery} alt="Gallery" />
+                                    <h3>Gallery</h3>
+                                </Link>
                             </div>
                             <div className="text-center">
-                                <img src={rendering} alt="Gallery" />
-                                <h3>Rendering</h3>
+                                <Link to="/rendering">
+                                    <img src={rendering} alt="Gallery" />
+                                    <h3>Rendering</h3>
+                                </Link>
                             </div>
                             <div className="text-center">
-                                <img src={lookBook} alt="Gallery" />
-                                <h3>Look Book</h3>
+                                <Link to="/lookBook">
+                                    <img src={lookBook} alt="Gallery" />
+                                    <h3>Look Book</h3>
+                                </Link>
                             </div>
                         </div>
                     </div>

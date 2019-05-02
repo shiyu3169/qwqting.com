@@ -7,8 +7,8 @@ export default class Navbar extends Component {
     state = {
         jewelries: [
             { text: "Gallery", to: "gallery" },
-            { text: "Look Book", to: "lookBook" },
-            { text: "Rendering", to: "rendering" }
+            { text: "Rendering", to: "rendering" },
+            { text: "Look Book", to: "lookBook" }
         ]
     };
 

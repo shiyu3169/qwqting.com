@@ -164,6 +164,7 @@ input[class^="btn-"]:hover {
   position: relative;
   background: #ffbc00;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .item::after {
@@ -584,7 +585,7 @@ img {
 }
 
 #work {
-  background: #ccc;
+  background: #f4f4f4;
   height: 100vh;
 }
 
