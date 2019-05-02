@@ -13,8 +13,10 @@ export default class Gallery extends Component {
                         <Navbar current="collections" />
                     </div>
                 </header>
-                <div className="my-4">
+                <div>
                     <section className="container">
+                        <h2 className="section-title">My Gallery</h2>
+                        <div className="bottom-line" />
                         <div className="items">
                             <div className="item">
                                 <div className="item-image">
