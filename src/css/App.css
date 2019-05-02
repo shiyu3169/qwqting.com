@@ -661,6 +661,10 @@ img {
   color: #fff;
 }
 
+#sub-footer a {
+  color: #fff;
+}
+
 #sub-footer .container {
   max-width: 1600px;
   display: -webkit-box;

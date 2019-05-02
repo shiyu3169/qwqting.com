@@ -376,6 +376,11 @@ img {
 #sub-footer {
     background: $dark-color;
     color: set-text-color($dark-color);
+
+    a {
+        color: set-text-color($dark-color);
+    }
+
     .container {
         max-width: 1600px;
         display: flex;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../img/logo.png";
 export default class SubFooter extends Component {
     render() {
@@ -11,9 +12,15 @@ export default class SubFooter extends Component {
                     <div>
                         <h2>Jewelry</h2>
                         <ul>
-                            <li>Gallery</li>
-                            <li>Look Book</li>
-                            <li>Rendering</li>
+                            <li>
+                                <Link to="/gallery">Gallery</Link>
+                            </li>
+                            <li>
+                                <Link to="/lookBook">Look Book</Link>
+                            </li>
+                            <li>
+                                <Link to="/rendering">Rendering</Link>
+                            </li>
                         </ul>
                     </div>
                     <div>
