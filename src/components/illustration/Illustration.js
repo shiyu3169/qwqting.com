@@ -20,9 +20,13 @@ export default class Illustration extends Component {
                         <h2 className="section-title">My Gallery</h2>
                         <div className="bottom-line" />
                         <div className="items">
-                            <Item src={illusion1} title="Illusion" to="/" />
-                            <Item src={nn1} title="Nurturing Nature" to="/" />
-                            <Item src={one1} title="One Of A Kind" to="/" />
+                            {this.state.items.map(item => (
+                                <Item
+                                    src={item.src}
+                                    title={item.title}
+                                    to={item.to}
+                                />
+                            ))}
                         </div>
                     </div>
                 </section>
