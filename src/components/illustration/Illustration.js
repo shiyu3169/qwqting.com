@@ -17,7 +17,7 @@ export default class Illustration extends Component {
                 </header>
                 <section id="illusion" className="mb-4">
                     <div className="container">
-                        <h2 className="section-title">My Gallery</h2>
+                        <h2 className="section-title">My Illustrations</h2>
                         <div className="bottom-line" />
                         <div className="items">
                             {this.state.items.map(item => (
