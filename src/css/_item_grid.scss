@@ -3,6 +3,15 @@
     grid-template-columns: repeat(3, 1fr);
     box-shadow: 0 5px 10px 0 rbga(0, 0, 0, 0.3);
 }
+
+#rendering {
+    .items {
+        grid-template-columns: 30% 30%;
+        justify-content: center;
+        column-gap: 5rem;
+    }
+}
+
 @media (min-width: 801px) {
     .item {
         position: relative;
@@ -101,6 +110,14 @@
             font-size: 1.2rem;
             opacity: 0.7;
             margin: 0;
+        }
+    }
+
+    #rendering {
+        .item {
+            &-image:before {
+                padding-top: 130%;
+            }
         }
     }
 }

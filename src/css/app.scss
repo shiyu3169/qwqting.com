@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
 }
 
+section {
+    min-height: 100vh;
+}
+
 body {
     font-family: "Dosis", sans-serif;
     line-height: 1.6;

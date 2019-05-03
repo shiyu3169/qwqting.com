@@ -160,6 +160,16 @@ input[class^="btn-"]:hover {
           box-shadow: 0 5px 10px 0 rbga(0, 0, 0, 0.3);
 }
 
+#rendering .items {
+  -ms-grid-columns: 30% 30%;
+      grid-template-columns: 30% 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+}
+
 @media (min-width: 801px) {
   .item {
     position: relative;
@@ -262,12 +272,19 @@ input[class^="btn-"]:hover {
     opacity: 0.7;
     margin: 0;
   }
+  #rendering .item-image:before {
+    padding-top: 130%;
+  }
 }
 
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
 }
 
 body {
