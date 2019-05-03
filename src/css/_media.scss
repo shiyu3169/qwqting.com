@@ -1,3 +1,49 @@
+// PC Only
+@media (min-width: 801px) {
+    #main-nav {
+        li {
+            ul {
+                li {
+                    ul {
+                        &:hover {
+                            visibility: visible;
+                            opacity: 1;
+                            z-index: 1;
+                            background: $light-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        a {
+            + ul {
+                &:hover {
+                    visibility: visible;
+                    opacity: 1;
+                    z-index: 1;
+                    background: $light-color;
+                }
+            }
+
+            &:hover {
+                border-color: $dark-color;
+
+                + ul {
+                    visibility: visible;
+                    opacity: 1;
+                    z-index: 1;
+                    background: $light-color;
+                }
+            }
+
+            &.current {
+                border-color: $main-color;
+            }
+        }
+    }
+}
+
 // Tablets & Smaller
 @media (max-width: 800px) {
     .section-title {

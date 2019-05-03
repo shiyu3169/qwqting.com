@@ -362,13 +362,6 @@ img {
   color: #000;
 }
 
-#main-nav li ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  z-index: 1;
-  background: #f4f4f4;
-}
-
 #main-nav a {
   text-decoration: none;
   color: #fff;
@@ -379,26 +372,8 @@ img {
   transition: border-color 0.5s;
 }
 
-#main-nav a + ul:hover {
-  visibility: visible;
-  opacity: 1;
-  z-index: 1;
-  background: #f4f4f4;
-}
-
-#main-nav a + ul li:hover {
-  background: #ccc;
-}
-
 #main-nav a:hover {
   border-color: #333;
-}
-
-#main-nav a:hover + ul {
-  visibility: visible;
-  opacity: 1;
-  z-index: 1;
-  background: #f4f4f4;
 }
 
 #main-nav a.current {
@@ -716,6 +691,33 @@ img {
 
 #sub-footer .container .social .fab:hover {
   background: #ffbc00;
+}
+
+@media (min-width: 801px) {
+  #main-nav li ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    background: #f4f4f4;
+  }
+  #main-nav a + ul:hover {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    background: #f4f4f4;
+  }
+  #main-nav a:hover {
+    border-color: #333;
+  }
+  #main-nav a:hover + ul {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    background: #f4f4f4;
+  }
+  #main-nav a.current {
+    border-color: #ffbc00;
+  }
 }
 
 @media (max-width: 800px) {

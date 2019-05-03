@@ -75,15 +75,6 @@ img {
                 a {
                     color: set-text-color($medium-color);
                 }
-
-                ul {
-                    &:hover {
-                        visibility: visible;
-                        opacity: 1;
-                        z-index: 1;
-                        background: $light-color;
-                    }
-                }
             }
         }
     }
@@ -96,30 +87,8 @@ img {
         padding-bottom: 0.5rem;
         transition: border-color 0.5s;
 
-        + ul {
-            &:hover {
-                visibility: visible;
-                opacity: 1;
-                z-index: 1;
-                background: $light-color;
-            }
-
-            li {
-                &:hover {
-                    background: $medium-color;
-                }
-            }
-        }
-
         &:hover {
             border-color: $dark-color;
-
-            + ul {
-                visibility: visible;
-                opacity: 1;
-                z-index: 1;
-                background: $light-color;
-            }
         }
 
         &.current {
