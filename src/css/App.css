@@ -576,20 +576,17 @@ img {
 
 #work {
   background: #f4f4f4;
-  height: 100vh;
 }
 
 #work-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 5rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  min-height: 50vh;
 }
 
 #work-a div {

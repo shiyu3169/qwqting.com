@@ -290,12 +290,12 @@ img {
 // Work Section
 #work {
     background: $light-color;
-    height: 100vh;
+
     &-a {
         display: flex;
-        height: 50%;
-        align-items: center;
+        margin-top: 5rem;
         justify-content: space-evenly;
+        min-height: 50vh;
         div {
             display: inline-block;
             height: 30%;
