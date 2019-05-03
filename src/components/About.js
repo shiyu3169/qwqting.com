@@ -9,7 +9,7 @@ export default class About extends Component {
             <div>
                 <header id="header-inner">
                     <div className="container">
-                        <Navbar current="jewelry" />
+                        <Navbar current="about" />
                     </div>
                 </header>
                 <section id="about-a" className="text-center">
