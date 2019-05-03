@@ -26,9 +26,9 @@ export default class SubFooter extends Component {
                     <div>
                         <h2>Illustration</h2>
                         <ul>
-                            <li>lorem</li>
-                            <li>lorem</li>
-                            <li>lorem</li>
+                            <li>
+                                <Link to="/illustration">View All</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="social">
