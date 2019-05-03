@@ -78,7 +78,7 @@
 
     // Items
     .items {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
 
         .item {
             text-align: center;
@@ -92,12 +92,12 @@
 
     // Work
     #work {
-        padding-bottom: 5rem;
         &-a {
+            margin-top: 0;
+            padding-bottom: 3rem;
             flex-flow: column;
-            height: 90vh;
+            align-items: center;
             div {
-                height: unset;
                 width: 80%;
             }
         }

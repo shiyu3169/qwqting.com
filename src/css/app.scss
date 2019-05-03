@@ -10,7 +10,7 @@
 }
 
 section {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 body {
@@ -352,6 +352,10 @@ img {
 
     a {
         color: set-text-color($dark-color);
+
+        &:hover {
+            color: $main-color;
+        }
     }
 
     .container {

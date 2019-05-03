@@ -117,6 +117,22 @@ input[class^="btn-"]:hover {
   margin-bottom: 4rem;
 }
 
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
 .mx-1 {
   margin: 0 1rem;
 }
@@ -287,7 +303,7 @@ input[class^="btn-"]:hover {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 body {
@@ -657,6 +673,10 @@ img {
   color: #fff;
 }
 
+#sub-footer a:hover {
+  color: #ffbc00;
+}
+
 #sub-footer .container {
   max-width: 1600px;
   display: -webkit-box;
@@ -750,8 +770,8 @@ img {
     margin: 2rem 0;
   }
   .items {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
   }
   .items .item {
     text-align: center;
@@ -761,18 +781,18 @@ img {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  #work {
-    padding-bottom: 5rem;
-  }
   #work-a {
+    margin-top: 0;
+    padding-bottom: 3rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    height: 90vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #work-a div {
-    height: unset;
     width: 80%;
   }
 }
