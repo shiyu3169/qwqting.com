@@ -120,4 +120,12 @@
             }
         }
     }
+
+    #lookBook {
+        .item {
+            &-image:before {
+                padding-top: 120%;
+            }
+        }
+    }
 }

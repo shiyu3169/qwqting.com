@@ -275,6 +275,9 @@ input[class^="btn-"]:hover {
   #rendering .item-image:before {
     padding-top: 130%;
   }
+  #lookBook .item-image:before {
+    padding-top: 120%;
+  }
 }
 
 * {
