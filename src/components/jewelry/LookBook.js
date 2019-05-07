@@ -11,7 +11,7 @@ export default class LookBook extends Component {
             <div>
                 <header id="header-inner">
                     <div className="container">
-                        <Navbar current="lookBook" />
+                        <Navbar current="jewelry" />
                     </div>
                 </header>
                 <section id="lookBook" className="mb-4">

@@ -10,7 +10,7 @@ export default class Rendering extends Component {
             <div>
                 <header id="header-inner">
                     <div className="container">
-                        <Navbar current="rendering" />
+                        <Navbar current="jewelry" />
                     </div>
                 </header>
                 <section id="rendering" className="mb-4">

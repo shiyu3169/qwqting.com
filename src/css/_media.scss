@@ -90,6 +90,11 @@
         }
     }
 
+    // Slides
+    .slides {
+        grid-template-columns: 1fr !important;
+    }
+
     // Work
     #work {
         &-a {
