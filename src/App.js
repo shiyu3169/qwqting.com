@@ -27,6 +27,7 @@ function App() {
                 <Route exact path="/about" component={About} />
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/work" component={Work} />
+
                 {/* Jewelry */}
                 <Route exact path="/jewelry" component={Jewelry} />
                 <Route exact path="/gallery" component={Gallery} />

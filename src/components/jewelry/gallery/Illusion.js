@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import Navbar from "../../utility/Navbar";
 import Slides from "../../utility/Slides";
 import i11 from "../../../img/jewelry/gallery/illusion/1/1.webp";
@@ -22,6 +22,8 @@ import i72 from "../../../img/jewelry/gallery/illusion/7/2.jpg";
 import i73 from "../../../img/jewelry/gallery/illusion/7/3.jpg";
 import i81 from "../../../img/jewelry/gallery/illusion/8/1.webp";
 import i82 from "../../../img/jewelry/gallery/illusion/8/2.jpg";
+import Block from "../../utility/Block";
+import Slider from "../../utility/Slider";
 
 export default class Illusion extends Component {
     state = {
@@ -34,11 +36,28 @@ export default class Illusion extends Component {
             [i61, i62, i63, i64],
             [i71, i72, i73],
             [i81, i82]
-        ]
+        ],
+        slides: []
     };
+
+    showSlides = imgs => {
+        this.setState({
+            slides: imgs
+        });
+    };
+
+    goBack = () => {
+        this.setState({
+            slides: []
+        });
+    };
+
     render() {
         return (
-            <Fragment>
+            <Block>
+                {this.state.slides.length > 0 && (
+                    <Slider slides={this.state.slides} goBack={this.goBack} />
+                )}
                 <header id="header-inner">
                     <div className="container">
                         <Navbar current="jewelry" />
@@ -49,16 +68,33 @@ export default class Illusion extends Component {
                         <h2 className="section-title">Illusion</h2>
                         <div className="bottom-line" />
                         <div className="items" />
-                    </div>
-                    <div className="container mb-4">
+
                         <div className="slides">
                             {this.state.items.map((item, i) => (
-                                <Slides key={i} src={item[0]} />
+                                <Slides
+                                    showSlides={this.showSlides}
+                                    key={i}
+                                    src={item[0]}
+                                    imgs={item}
+                                    path="illusion"
+                                />
                             ))}
                         </div>
+                        <p className="my-4">
+                            This collection is derived from Nuturing Nature
+                            which is inspired by city gardening. With organic
+                            form breaking through the geometric structure, the
+                            work alludes to new growth extending from the body.
+                            The fabric acts as a casing but allows the viewer to
+                            see the seeds inside. From the outside there is
+                            order, but the interior shows difference in the same
+                            way personalities shine in an orderly city.
+                            Imitating natural patterns to create jewelry is my
+                            own way to nurture the nature.
+                        </p>
                     </div>
                 </section>
-            </Fragment>
+            </Block>
         );
     }
 }
