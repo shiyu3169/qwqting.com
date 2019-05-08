@@ -41,6 +41,7 @@ export default class Illustration extends Component {
                         <div className="items">
                             {this.state.items.map(item => (
                                 <Item
+                                    key={item.src}
                                     src={item.src}
                                     title={item.title}
                                     to={item.to}

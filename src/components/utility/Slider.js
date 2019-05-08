@@ -1,91 +1,79 @@
 import React, { Component } from "react";
-
+import "../../../node_modules/bootstrap/js/dist/carousel";
 export default class Slider extends Component {
-    componentDidMount() {
-        document.querySelector(".slide-img").classList.add("current");
-        document.body.style.overflow = "hidden";
-    }
-
-    componentWillUnmount() {
-        document.body.style.overflow = "visible";
-    }
-
-    goBack = () => {
-        this.props.goBack();
-    };
-
-    nextSlide = () => {
-        // get current class
-        const current = document.querySelector(".current");
-        // Remove current class
-        current.classList.remove("current");
-
-        // Check for next Slide
-        if (current.nextElementSibling) {
-            // Add current to next sibling
-            current.nextElementSibling.classList.add("current");
-        } else {
-            // Add current to start
-            document.querySelector(".slide-img").classList.add("current");
-        }
-    };
-
-    prevSlide = () => {
-        // get current class
-        const current = document.querySelector(".current");
-        const images = document.querySelectorAll(".slide-img");
-        // Remove current class
-        current.classList.remove("current");
-
-        // Check for prev Slide
-        if (current.previousElementSibling) {
-            // Add current to prev sibling
-            current.previousElementSibling.classList.add("current");
-        } else {
-            // Add current to start
-            images[images.length - 1].classList.add("current");
-        }
-    };
-
-    show = i => {
-        // get current class
-        const current = document.querySelector(".current");
-        const images = document.querySelectorAll(".slide-img");
-        // Remove current class
-        current.classList.remove("current");
-
-        images[i].classList.add("current");
-    };
-
     render() {
         return (
             <div className="slider">
-                <span onClick={this.goBack}>
-                    <i className="fas fa-backspace fa-2x" />
-                </span>
-                <div>
-                    {this.props.slides.map((slide, i) => (
-                        <img className="slide-img" key={i} src={slide} alt="" />
-                    ))}
-                </div>
-                <div className="buttons">
-                    <button id="prev" onClick={this.prevSlide}>
-                        <i className="fas fa-arrow-left" />
-                    </button>
-                    <button id="next" onClick={this.nextSlide}>
-                        <i className="fas fa-arrow-right" />
-                    </button>
-                </div>
-                <div className="footer-button">
-                    {this.props.slides.map((slide, i) => (
-                        <img
-                            className="footer-img"
-                            key={i}
-                            src={slide}
-                            alt=""
-                            onClick={this.show.bind(this, i)}
-                        />
-                    ))}
+                <div
+                    // id="carouselExampleIndicators"
+                    id={`Indicators${this.props.i}`}
+                    className="carousel slide"
+                    data-ride="carousel"
+                    data-interval="false"
+                >
+                    <ol className="carousel-indicators">
+                        {this.props.imgs.map((img, l) =>
+                            l === 0 ? (
+                                <li
+                                    // data-target="#carouselExampleIndicators"
+                                    data-target={`#Indicators${this.props.i}`}
+                                    data-slide-to="0"
+                                    className="active"
+                                    key={l}
+                                />
+                            ) : (
+                                <li
+                                    // data-target="#carouselExampleIndicators"
+                                    data-target={`#Indicators${this.props.i}`}
+                                    key={l}
+                                    data-slide-to="1"
+                                />
+                            )
+                        )}
+                    </ol>
+                    <div className="carousel-inner">
+                        {this.props.imgs.map((img, i) =>
+                            i === 0 ? (
+                                <div className="carousel-item active" key={i}>
+                                    {" "}
+                                    <img
+                                        className="d-block w-100"
+                                        src={img}
+                                        alt=""
+                                    />{" "}
+                                </div>
+                            ) : (
+                                <div className="carousel-item" key={i}>
+                                    {" "}
+                                    <img
+                                        className="d-block w-100"
+                                        src={img}
+                                        alt=""
+                                    />{" "}
+                                </div>
+                            )
+                        )}
+                    </div>
+                    <a
+                        className="carousel-control-prev"
+                        // href="#carouselExampleIndicators"
+                        href={`#Indicators${this.props.i}`}
+                        role="button"
+                        data-slide="prev"
+                    >
+                        <i className="fas fa-chevron-left fa-2x" />
+                        <span className="sr-only">Previous</span>
+                    </a>
+                    <a
+                        className="carousel-control-next"
+                        // href="#carouselExampleIndicators".
+                        href={`#Indicators${this.props.i}`}
+                        role="button"
+                        data-slide="next"
+                    >
+                        <i className="fas fa-chevron-right fa-2x" />
+                        <span className="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         );

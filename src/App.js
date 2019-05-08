@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // Style
-import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./css/App.css";
 // Main
 import Home from "./components/Home";

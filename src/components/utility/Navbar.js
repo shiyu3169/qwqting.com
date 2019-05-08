@@ -15,7 +15,7 @@ export default class Navbar extends Component {
     render() {
         const { current } = this.props;
         return (
-            <nav id="main-nav" className="sticky-top">
+            <nav id="main-nav">
                 <img src={logo} alt="My portfolio" id="logo" />
                 <ul>
                     <li>

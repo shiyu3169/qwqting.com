@@ -40,12 +40,6 @@ export default class Illusion extends Component {
         slides: []
     };
 
-    showSlides = imgs => {
-        this.setState({
-            slides: imgs
-        });
-    };
-
     goBack = () => {
         this.setState({
             slides: []
@@ -72,15 +66,16 @@ export default class Illusion extends Component {
                         <div className="slides">
                             {this.state.items.map((item, i) => (
                                 <Slides
-                                    showSlides={this.showSlides}
                                     key={i}
                                     src={item[0]}
                                     imgs={item}
                                     path="illusion"
+                                    title="ILLUSION"
+                                    i={i}
                                 />
                             ))}
                         </div>
-                        <p className="my-4">
+                        <p className="my-5">
                             This collection is derived from Nuturing Nature
                             which is inspired by city gardening. With organic
                             form breaking through the geometric structure, the
