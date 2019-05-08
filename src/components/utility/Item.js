@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Item({ src, title, to, state }) {
-    return (
+export default function Item({ src, title, to }) {
+    return to ? (
         <div className="item">
             <Link to={to}>
                 <div className="item-image">
@@ -14,6 +14,12 @@ export default function Item({ src, title, to, state }) {
                     </div>
                 </div>
             </Link>
+        </div>
+    ) : (
+        <div className="item">
+            <div className="item-image">
+                <img src={src} alt={title} />
+            </div>
         </div>
     );
 }

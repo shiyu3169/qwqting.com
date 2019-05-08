@@ -23,7 +23,6 @@ import i73 from "../../../img/jewelry/gallery/illusion/7/3.jpg";
 import i81 from "../../../img/jewelry/gallery/illusion/8/1.webp";
 import i82 from "../../../img/jewelry/gallery/illusion/8/2.jpg";
 import Block from "../../utility/Block";
-import Slider from "../../utility/Slider";
 
 export default class Illusion extends Component {
     state = {
@@ -36,22 +35,12 @@ export default class Illusion extends Component {
             [i61, i62, i63, i64],
             [i71, i72, i73],
             [i81, i82]
-        ],
-        slides: []
-    };
-
-    goBack = () => {
-        this.setState({
-            slides: []
-        });
+        ]
     };
 
     render() {
         return (
             <Block>
-                {this.state.slides.length > 0 && (
-                    <Slider slides={this.state.slides} goBack={this.goBack} />
-                )}
                 <header id="header-inner">
                     <div className="container">
                         <Navbar current="jewelry" />

@@ -13,12 +13,13 @@ import Jewelry from "./components/jewelry/Jewelry";
 import Gallery from "./components/jewelry/gallery/Gallery";
 import Rendering from "./components/jewelry/Rendering";
 import LookBook from "./components/jewelry/LookBook";
+import Illusion from "./components/jewelry/gallery/Illusion";
 // Illustration
 import Illustration from "./components/illustration/Illustration";
 import Footer from "./components/utility/Footer";
 import SubFooter from "./components/utility/SubFooter";
 import ScrollToTop from "./components/utility/ScrollToTop";
-import Illusion from "./components/jewelry/gallery/Illusion";
+import NuturingNature from "./components/jewelry/gallery/NuturingNature";
 
 function App() {
     return (
@@ -34,6 +35,11 @@ function App() {
                 <Route exact path="/jewelry" component={Jewelry} />
                 <Route exact path="/gallery" component={Gallery} />
                 <Route exact path="/illusion" component={Illusion} />
+                <Route
+                    exact
+                    path="/nurturing_nature"
+                    component={NuturingNature}
+                />
                 <Route exact path="/lookBook" component={LookBook} />
                 <Route exact path="/rendering" component={Rendering} />
                 {/* Illustration */}

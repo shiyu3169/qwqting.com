@@ -27,12 +27,12 @@ export default class Gallery extends Component {
                             <Item
                                 src={nn1}
                                 title="Nurturing Nature"
-                                to="/collection/nurturing_nature"
+                                to="/nurturing_nature"
                             />
                             <Item
                                 src={one1}
                                 title="One Of A Kind"
-                                to="/collection/one_of_a_kind"
+                                to="/one_of_a_kind"
                             />
                         </div>
                     </div>
