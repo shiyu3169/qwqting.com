@@ -1,25 +1,14 @@
 import React, { Component } from "react";
 import "../../../node_modules/bootstrap/js/dist/modal";
 import Slider from "./Slider";
-import Item from "./Item";
+import ItemSlides from "./ItemSlides";
 
 export default class Slides extends Component {
     render() {
         return (
             <div>
-                {/* <img
-                    className="slide"
-                    src={this.props.src}
-                    alt=""
-                    data-toggle="modal"
-                    data-target={`#modal${this.props.i}`}
-                /> */}
-                <div
-                    className="slide"
-                    data-toggle="modal"
-                    data-target={`#modal${this.props.i}`}
-                >
-                    <Item src={this.props.src} />
+                <div data-toggle="modal" data-target={`#modal${this.props.i}`}>
+                    <ItemSlides imgs={this.props.imgs} i={this.props.i} />
                 </div>
 
                 <div

@@ -450,31 +450,6 @@ img {
           justify-content: center;
 }
 
-#about-a .award-1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: aw1;
-}
-
-#about-a .award-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: aw2;
-}
-
-#about-a .award-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: aw3;
-}
-
-#about-a .award-1 .fas,
-#about-a .award-2 .fas,
-#about-a .award-3 .fas {
-  color: #ffbc00;
-  margin: 1rem;
-}
-
 #contact-a .text-fields {
   display: -ms-grid;
   display: grid;
