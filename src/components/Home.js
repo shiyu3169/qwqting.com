@@ -24,7 +24,7 @@ export default class Home extends Component {
                                 />
                             </h1>
                             <div>
-                                <a href="#work" className="btn-light my-4">
+                                <a href="#work" className="btn-light">
                                     View My Work
                                 </a>
                             </div>

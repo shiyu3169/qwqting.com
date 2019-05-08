@@ -108,8 +108,6 @@ img {
         // Header Content
         .header-content {
             text-align: center;
-            padding-top: 10%;
-
             h1 {
                 font-size: 4rem;
                 line-height: 1.2;
@@ -118,10 +116,9 @@ img {
             div {
                 a {
                     display: inline-block;
-                    width: 150px;
-                    margin-left: -100px;
+                    margin-left: -70px;
                     position: absolute;
-                    bottom: 10%;
+                    bottom: 15%;
                 }
             }
         }
@@ -421,12 +418,12 @@ img {
 #main-footer {
     background: $dark-color;
     color: #fff;
-    height: 5rem;
+    height: 2rem;
 
     .footer-content {
         display: flex;
         justify-content: center;
-        height: 5rem;
+        height: 2rem;
         align-items: center;
     }
 }
@@ -443,24 +440,20 @@ img {
         }
     }
 
-    .container {
-        max-width: 1600px;
+    .container-fluid {
         display: flex;
         justify-content: space-between;
-        height: 15rem;
+        height: 10rem;
         align-items: center;
         ul {
             text-align: center;
         }
         .social .fab {
             margin-right: 1rem;
-            border: 2px #fff solid;
-            border-radius: 50%;
-            height: 20px;
-            width: 20px;
             line-height: 20px;
             text-align: center;
             padding: 0.5rem;
+            cursor: pointer;
 
             &:hover {
                 background: $main-color;

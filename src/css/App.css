@@ -1,13 +1,6 @@
-.container {
-  max-width: 1280px;
-  padding: 0 1.5rem;
-  margin: auto;
-  overflow: hidden;
-}
-
 .btn-main, .btn-light, .btn-dark, .btn-medium {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border: none;
@@ -67,86 +60,6 @@ input[class^="btn-"]:hover {
 
 .text-center {
   text-align: center;
-}
-
-.py-1 {
-  padding: 1rem 0;
-}
-
-.py-2 {
-  padding: 2rem 0;
-}
-
-.py-3 {
-  padding: 3rem 0;
-}
-
-.py-4 {
-  padding: 4rem 0;
-}
-
-.my-1 {
-  margin: 1rem 0;
-}
-
-.my-2 {
-  margin: 2rem 0;
-}
-
-.my-3 {
-  margin: 3rem 0;
-}
-
-.my-4 {
-  margin: 4rem 0;
-}
-
-.mb-1 {
-  margin-bottom: 1rem;
-}
-
-.mb-2 {
-  margin-bottom: 2rem;
-}
-
-.mb-3 {
-  margin-bottom: 3rem;
-}
-
-.mb-4 {
-  margin-bottom: 4rem;
-}
-
-.mt-1 {
-  margin-top: 1rem;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-.mt-3 {
-  margin-top: 3rem;
-}
-
-.mt-4 {
-  margin-top: 4rem;
-}
-
-.mx-1 {
-  margin: 0 1rem;
-}
-
-.mx-2 {
-  margin: 0 2rem;
-}
-
-.mx-3 {
-  margin: 0 3rem;
-}
-
-.mx-4 {
-  margin: 0 4rem;
 }
 
 .section-title {
@@ -445,7 +358,6 @@ img {
 
 #header-home .header-content {
   text-align: center;
-  padding-top: 10%;
 }
 
 #header-home .header-content h1 {
@@ -455,10 +367,9 @@ img {
 
 #header-home .header-content div a {
   display: inline-block;
-  width: 150px;
-  margin-left: -100px;
+  margin-left: -70px;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
 }
 
 #header-inner {
@@ -785,7 +696,7 @@ img {
 #main-footer {
   background: #333;
   color: #fff;
-  height: 5rem;
+  height: 2rem;
 }
 
 #main-footer .footer-content {
@@ -795,7 +706,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 5rem;
+  height: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -814,36 +725,32 @@ img {
   color: #ffbc00;
 }
 
-#sub-footer .container {
-  max-width: 1600px;
+#sub-footer .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 15rem;
+  height: 10rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#sub-footer .container ul {
+#sub-footer .container-fluid ul {
   text-align: center;
 }
 
-#sub-footer .container .social .fab {
+#sub-footer .container-fluid .social .fab {
   margin-right: 1rem;
-  border: 2px #fff solid;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
   line-height: 20px;
   text-align: center;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
-#sub-footer .container .social .fab:hover {
+#sub-footer .container-fluid .social .fab:hover {
   background: #ffbc00;
 }
 
