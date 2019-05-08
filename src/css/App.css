@@ -806,11 +806,11 @@ img {
   #sub-footer {
     text-align: center;
   }
-  #sub-footer .container {
+  #sub-footer .container-fluid {
     display: block;
     height: 100%;
   }
-  #sub-footer .container div {
+  #sub-footer .container-fluid div {
     margin: 2rem 0;
   }
   .items {
