@@ -918,7 +918,7 @@ img {
     font-size: 2rem;
   }
   #main-footer {
-    height: 7rem;
+    height: 3rem;
   }
   #main-footer .footer-content {
     -webkit-box-orient: vertical;
@@ -926,7 +926,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1rem;
-    height: 5rem;
+    height: 3rem;
   }
 }
 
