@@ -424,6 +424,10 @@ img {
   background: #ccc;
 }
 
+#about-a {
+  min-height: 0;
+}
+
 #about-a .about-info {
   display: -ms-grid;
   display: grid;
@@ -489,6 +493,12 @@ img {
   margin-bottom: 1.2rem;
 }
 
+#contact-a .text-fields input,
+#contact-a .text-fields textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 #contact-a .text-fields .name-input {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -527,6 +537,7 @@ img {
 
 #contact-a button[type="submit"] {
   width: 50%;
+  border-radius: 5px;
 }
 
 #contact-b .contact-info {

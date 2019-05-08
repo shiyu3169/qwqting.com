@@ -187,6 +187,7 @@ img {
 #about {
     // About A
     &-a {
+        min-height: 0;
         .about-info {
             display: grid;
             grid-template-areas:
@@ -239,7 +240,11 @@ img {
                 "message message";
             grid-gap: 1.2rem;
             margin-bottom: 1.2rem;
-
+            input,
+            textarea {
+                border: 1px solid $medium-color;
+                border-radius: 5px;
+            }
             // Grid Areas
             .name-input {
                 grid-area: name;
@@ -265,6 +270,7 @@ img {
 
         button[type="submit"] {
             width: 50%;
+            border-radius: 5px;
         }
     }
 
