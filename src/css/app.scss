@@ -48,7 +48,7 @@ img {
 // Logo
 #logo {
   width: 70px;
-  height: 90px;
+  height: 70px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -102,24 +102,22 @@ img {
   // Header Home
   &-home {
     background: $bg-image no-repeat center center/cover;
-    height: 100vh;
+    min-height: 100vh;
     color: #000;
 
     // Header Content
     .header-content {
-      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
       h1 {
         font-size: 4rem;
         line-height: 1.2;
       }
 
-      div {
-        a {
-          display: inline-block;
-          margin-left: -70px;
-          position: absolute;
-          bottom: 15%;
-        }
+      & > div {
+        width: 50% !important;
+        height: 50% !important;
       }
     }
   }

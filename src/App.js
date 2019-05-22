@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './css/app.min.css';
 // Main
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Work from './components/Work';
