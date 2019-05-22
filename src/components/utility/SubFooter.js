@@ -6,7 +6,7 @@ export default class SubFooter extends Component {
     return (
       <div id='sub-footer'>
         <div className='container-fluid'>
-          <div>
+          <div className='m-0'>
             <img id='logo' src={logo} alt='logo' />
           </div>
           <div>
@@ -32,7 +32,7 @@ export default class SubFooter extends Component {
             </ul>
           </div>
           <div className='social'>
-            <i class='fab fa-behance-square fa-2x' />
+            <i className='fab fa-behance-square fa-2x' />
             <i className='fab fa-facebook fa-2x' />
             <i className='fab fa-instagram fa-2x' />
             <i className='fab fa-linkedin fa-2x' />

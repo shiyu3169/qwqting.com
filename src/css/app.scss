@@ -103,14 +103,16 @@ img {
   // Header Home
   &-home {
     background: $bg-image no-repeat center center/cover;
-    min-height: 100vh;
+    height: 100vh;
     color: #000;
 
     // Header Content
     .header-content {
       display: flex;
+      height: 100vh;
       justify-content: space-evenly;
       align-items: center;
+      align-content: center;
       h1 {
         font-size: 5rem;
         line-height: 1.2;
