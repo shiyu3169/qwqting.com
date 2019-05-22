@@ -20,14 +20,13 @@ export default class Home extends Component {
             <Navbar current='home' />
             <div className='header-content mt-5'>
               <div className='container'>
-                <h1>
-                  Qiuting Wang
-                  <br />
+                <h1>Qiuting Wang</h1>
+                <p>
                   The{' '}
                   <Typer
                     words={['Jewelry Designer', 'Jeweler', 'Illustrator']}
                   />
-                </h1>
+                </p>
               </div>
               <div className='container'>
                 <HomeSlides imgs={this.state.imgs} />

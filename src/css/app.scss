@@ -16,7 +16,7 @@ section {
 body {
   font-family: 'Special Elite', cursive;
   line-height: 1.6;
-  background: #000000;
+  background: #fff;
 }
 
 a {
@@ -111,7 +111,11 @@ img {
       justify-content: space-evenly;
       align-items: center;
       h1 {
-        font-size: 4rem;
+        font-size: 5rem;
+        line-height: 1.2;
+      }
+      p {
+        font-size: 2rem;
         line-height: 1.2;
       }
 
