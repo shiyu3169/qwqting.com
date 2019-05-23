@@ -103,9 +103,9 @@ img {
   // Header Home
   &-home {
     background: $bg-image no-repeat center center/cover;
-    height: 100vh;
+    min-height: 100vh;
     color: #000;
-
+    margin-bottom: 5rem;
     // Header Content
     .header-content {
       display: flex;
