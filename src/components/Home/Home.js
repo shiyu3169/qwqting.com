@@ -5,6 +5,7 @@ import slide1 from '../../img/slide1.jpg';
 import slide2 from '../../img/slide2.jpg';
 import slide3 from '../../img/slide3.jpg';
 import HomeSlides from './HomeSlides';
+import logo from '../../img/logo.png';
 
 export default class Home extends Component {
   state = {
@@ -16,19 +17,21 @@ export default class Home extends Component {
     return (
       <div>
         <header id='header-home'>
-          <div>
+          <div className='container-fluid'>
             <Navbar current='home' />
             <div className='header-content mt-5'>
-              <div className='container'>
-                <h1>Qiuting Wang</h1>
-                <p>
-                  The{' '}
-                  <Typer
-                    words={['Jewelry Designer', 'Jeweler', 'Illustrator']}
-                  />
-                </p>
+              <div>
+                <img src={logo} alt='' />
+                <div className='text-left'>
+                  <p>
+                    The{' '}
+                    <Typer
+                      words={['Jewelry Designer', 'Jeweler', 'Illustrator']}
+                    />
+                  </p>
+                </div>
               </div>
-              <div className='container'>
+              <div className='home-slides'>
                 <HomeSlides imgs={this.state.imgs} />
               </div>
             </div>
