@@ -7,7 +7,8 @@ import './css/app.min.css';
 import Home from './components/Home/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Work from './components/Work';
+
+import Footer from './components/utility/Footer';
 // Jewelry
 import Gallery from './components/jewelry/gallery/Gallery';
 import Rendering from './components/jewelry/Rendering';
@@ -26,7 +27,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
         <Route exact path='/contact' component={Contact} />
-        <Route exact path='/work' component={Work} />
+
         {/* Jewelry */}
         <Route exact path='/gallery' component={Gallery} />
         <Route exact path='/illusion' component={Illusion} />
@@ -35,6 +36,8 @@ function App() {
         <Route exact path='/rendering' component={Rendering} />
         {/* Illustration */}
         <Route exact path='/illustration' component={Illustration} />
+
+        <Footer />
       </ScrollToTop>
     </Router>
   );

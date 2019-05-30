@@ -5,10 +5,28 @@ body {
   line-height: 1.6;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .navbar {
   justify-content: space-between;
   opacity: 0.8;
   .navbar-collapse {
     flex-grow: unset;
+  }
+}
+
+.bg-dark {
+  color: white;
+  a {
+    color: white;
   }
 }
