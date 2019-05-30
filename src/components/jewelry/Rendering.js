@@ -1,33 +1,32 @@
-import React, { Component } from "react";
-import Navbar from "../utility/Navbar";
-import Item from "../utility/Item";
-import digital from "../../img/jewelry/rendering/digital.jpg";
-import traditional from "../../img/jewelry/rendering/traditional.jpg";
+import React, { Component } from 'react';
+import Navbar from '../utility/Navbar';
+
+import digital from '../../img/jewelry/rendering/digital.jpg';
+import traditional from '../../img/jewelry/rendering/traditional.jpg';
 
 export default class Rendering extends Component {
-    render() {
-        return (
-            <div>
-                <header id="header-inner">
-                    <div className="container">
-                        <Navbar current="jewelry" />
-                    </div>
-                </header>
-                <section id="rendering" className="mb-4">
-                    <div className="container">
-                        <h2 className="section-title">My Renderings</h2>
-                        <div className="bottom-line" />
-                        <div className="items">
-                            <Item src={digital} title="Digital" to="/" />
-                            <Item
-                                src={traditional}
-                                title="Traditional"
-                                to="/"
-                            />
-                        </div>
-                    </div>
-                </section>
+  render() {
+    return (
+      <>
+        <Navbar active='jewelry' />
+        <div className='container text-center my-5 py-5'>
+          <h2 className='section-title'>Rendering</h2>
+          <div className='row my-5'>
+            <div className='col-lg-6'>
+              <div className='container'>
+                <img src={digital} alt='Digital' className='w-100' />
+                <p>Digital</p>
+              </div>
             </div>
-        );
-    }
+            <div className='col-lg-6'>
+              <div className='container'>
+                <img src={traditional} alt='Traditional' className='w-100' />
+                <p>Traditional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
 }

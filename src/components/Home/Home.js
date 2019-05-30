@@ -7,11 +7,12 @@ import img3 from '../../img/illustration/i8.jpg';
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <Navbar active='home' />
       <div className='container-fluid'>
         <Showcase
           img={img1}
           dir='left'
+          color='pink'
           text='This collection is derived from Nuturing Nature which is inspired by city gardening. With organic form breaking through the geometric structure, the work alludes to new growth extending from the body. The fabric acts as a casing but allows the viewer to see the seeds inside. From the outside there is order, but the interior shows difference in the same way personalities shine in an orderly city. Imitating natural patterns to create jewelry is my own way to nurture the nature.'
         />
         <Showcase

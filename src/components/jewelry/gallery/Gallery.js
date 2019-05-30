@@ -1,43 +1,34 @@
-import React, { Component, Fragment } from "react";
-import Navbar from "../../utility/Navbar";
-import illusion1 from "../../../img/jewelry/gallery/illusion/illusion1.jpg";
-import nn1 from "../../../img/jewelry/gallery/nurturingNature/nn1.jpg";
-import one1 from "../../../img/jewelry/gallery/oneOfAKind/one1.jpg";
-import Item from "../../utility/Item";
+import React, { Component } from 'react';
+import Navbar from '../../utility/Navbar';
+import illusion1 from '../../../img/jewelry/gallery/illusion/illusion1.jpg';
+import nn1 from '../../../img/jewelry/gallery/nurturingNature/nn1.jpg';
+import one1 from '../../../img/jewelry/gallery/oneOfAKind/one1.jpg';
 
 export default class Gallery extends Component {
-    render() {
-        return (
-            <Fragment>
-                <header id="header-inner">
-                    <div className="container">
-                        <Navbar current="jewelry" />
-                    </div>
-                </header>
-                <section id="gallery">
-                    <div className="container">
-                        <h2 className="section-title">My Gallery</h2>
-                        <div className="bottom-line" />
-                        <div className="items mt-4">
-                            <Item
-                                src={illusion1}
-                                title="Illusion"
-                                to="/illusion"
-                            />
-                            <Item
-                                src={nn1}
-                                title="Nurturing Nature"
-                                to="/nurturing_nature"
-                            />
-                            <Item
-                                src={one1}
-                                title="One Of A Kind"
-                                to="/one_of_a_kind"
-                            />
-                        </div>
-                    </div>
-                </section>
-            </Fragment>
-        );
-    }
+  render() {
+    return (
+      <>
+        <Navbar active='jewelry' />
+        <div className='container text-center my-5 py-5'>
+          <h2 className='section-title'>Gallery</h2>
+          <div className='row mt-5 pt-5'>
+            <div className='col-lg-4'>
+              <div className='container'>
+                <img className='w-100' src={illusion1} alt='illusion' />
+                <p>Illusion</p>
+              </div>
+            </div>
+            <div className='col-lg-4'>
+              <img className='w-100' src={nn1} alt='Nurturing Nature' />
+              <p>Nurturing Nature</p>
+            </div>
+            <div className='col-lg-4'>
+              <img className='w-100' src={one1} alt='One Of A Kind' />
+              <p>One of a Kind</p>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
 }
