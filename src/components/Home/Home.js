@@ -1,43 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from '../utility/Navbar';
-import Typer from '../utility/Typer';
-import slide1 from '../../img/slide1.jpg';
-import slide2 from '../../img/slide2.jpg';
-import slide3 from '../../img/slide3.jpg';
-import HomeSlides from './HomeSlides';
-import logo from '../../img/logo.png';
-
-export default class Home extends Component {
-  state = {
-    imgs: [slide1, slide2, slide3],
-    i: 1
-  };
-
-  render() {
-    return (
-      <div>
-        <header id='header-home'>
-          <div className='container-fluid'>
-            <Navbar current='home' />
-            <div className='header-content mt-5'>
-              <div>
-                <img src={logo} alt='' />
-                <div className='text-left'>
-                  <p>
-                    The{' '}
-                    <Typer
-                      words={['Jewelry Designer', 'Jeweler', 'Illustrator']}
-                    />
-                  </p>
-                </div>
-              </div>
-              <div className='home-slides'>
-                <HomeSlides imgs={this.state.imgs} />
-              </div>
-            </div>
-          </div>
-        </header>
+import Showcase from './Showcase';
+import img1 from '../../img/jewelry/gallery/illusion/5/2.jpg';
+import img2 from '../../img/jewelry/gallery/nurturingNature/1/1.jpg';
+import img3 from '../../img/illustration/i8.jpg';
+const Home = () => {
+  return (
+    <>
+      <Navbar />
+      <div className='container-fluid'>
+        <Showcase
+          img={img1}
+          dir='left'
+          text='This collection is derived from Nuturing Nature which is inspired by city gardening. With organic form breaking through the geometric structure, the work alludes to new growth extending from the body. The fabric acts as a casing but allows the viewer to see the seeds inside. From the outside there is order, but the interior shows difference in the same way personalities shine in an orderly city. Imitating natural patterns to create jewelry is my own way to nurture the nature.'
+        />
+        <Showcase
+          img={img2}
+          dir='right'
+          text='Nurturing Nature is inspired by city gardening. With organic form breaking through or within the geometric from, the new growing leaves of pruned trees implied how people keep their personalities when following the city rule. When I imitate natural pattern and make it into jewelry pieces, it is also my own way to nurture the nature. People wonder at the texture or material in my designs. It is the rebirth of natural elements, which leads people to carefully gaze, question and think. Deconstructing natural patterns, I take the original form and turn it into a basic element; the pattern of a mushroom becomes part of my language.'
+        />
+        <Showcase
+          img={img3}
+          dir='left'
+          text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus praesentium quod consequuntur? Vitae repudiandae dolore, explicabo ut distinctio quisquam quasi dicta repellat aut sed inventore provident unde! Dolore, beatae suscipit.'
+        />
       </div>
-    );
-  }
-}
+    </>
+  );
+};
+
+export default Home;

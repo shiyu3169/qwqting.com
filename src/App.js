@@ -16,8 +16,6 @@ import LookBook from './components/jewelry/LookBook';
 import Illusion from './components/jewelry/gallery/Illusion';
 // Illustration
 import Illustration from './components/illustration/Illustration';
-import Footer from './components/utility/Footer';
-import SubFooter from './components/utility/SubFooter';
 import ScrollToTop from './components/utility/ScrollToTop';
 import NuturingNature from './components/jewelry/gallery/NuturingNature';
 
@@ -40,8 +38,6 @@ function App() {
         <Route exact path='/rendering' component={Rendering} />
         {/* Illustration */}
         <Route exact path='/illustration' component={Illustration} />
-        <SubFooter />
-        <Footer />
       </ScrollToTop>
     </Router>
   );
