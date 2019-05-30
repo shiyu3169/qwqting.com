@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../../utility/Navbar';
+import { Link } from 'react-router-dom';
 import illusion1 from '../../../img/jewelry/gallery/illusion/illusion1.jpg';
 import nn1 from '../../../img/jewelry/gallery/nurturingNature/nn1.jpg';
 import one1 from '../../../img/jewelry/gallery/oneOfAKind/one1.jpg';
@@ -14,8 +15,10 @@ export default class Gallery extends Component {
           <div className='row mt-5 pt-5'>
             <div className='col-lg-4'>
               <div className='container'>
-                <img className='w-100' src={illusion1} alt='illusion' />
-                <p>Illusion</p>
+                <Link to='/illusion'>
+                  <img className='w-100' src={illusion1} alt='illusion' />
+                  <p>Illusion</p>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4'>
