@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../utility/Navbar';
-import Item from '../utility/Item';
+
 import i1 from '../../img/illustration/i1.jpg';
 import i2 from '../../img/illustration/i2.jpg';
 import i3 from '../../img/illustration/i3.jpg';
