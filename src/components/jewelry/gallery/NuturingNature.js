@@ -157,7 +157,7 @@ const NuturingNature = () => {
           <Modal target='i5' imgs={[i51, i52, i53]} />
           <Modal target='i6' imgs={[i61, i62, i63]} />
           <Modal target='i7' imgs={[i71, i72]} />
-          <Modal target='i8' imgs={[i81, i82, i83]} />
+          <Modal target='i8' imgs={[i81, i82, i83, i84]} />
           <Modal target='i9' imgs={[i91, i92, i93]} />
           <Modal target='i10' imgs={[i101, i102, i103, i104]} />
           <Modal target='i11' imgs={[i111]} />

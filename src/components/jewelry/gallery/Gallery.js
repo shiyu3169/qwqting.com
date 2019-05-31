@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../../utility/Navbar';
 import { Link } from 'react-router-dom';
-import illusion1 from '../../../img/jewelry/gallery/illusion/illusion1.jpg';
+import illusion1 from '../../../img/jewelry/gallery/illusion/4/4-1.webp';
 import nn1 from '../../../img/jewelry/gallery/nurturingNature/nn1.jpg';
 import one1 from '../../../img/jewelry/gallery/oneOfAKind/one1.jpg';
 
