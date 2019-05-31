@@ -60,7 +60,7 @@ const Navbar = ({ active }) => {
           </li>
           <li className='nav-item'>
             <Link className='nav-link' to='/About' id='about'>
-              About
+              About/Contact
             </Link>
           </li>
           <li className='nav-item'>

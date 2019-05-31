@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className='container text-center'>
       <h2 className='section-title mb-4'>Contact Me</h2>
-      <form name='contactQiuting' method='POST' data-netlify='true'>
+      <form name='qwqiuting' action='POST' data-netlify='true'>
         <div className='row'>
           <div className='col-lg-6'>
             <div className='form-group'>
@@ -21,7 +21,7 @@ const Contact = () => {
               <input
                 type='text'
                 className='form-control'
-                placeholder='Suject'
+                placeholder='Subject'
                 name='subject'
               />
             </div>
