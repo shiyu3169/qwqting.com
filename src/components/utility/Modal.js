@@ -19,7 +19,7 @@ const Modal = ({ target, imgs }) => {
             className='carousel slide'
             data-ride='carousel'
           >
-            <div className='carousel-inner'>
+            <div className='carousel-inner text-center'>
               {imgs.map((img, i) => (
                 <div className='carousel-item' key={`${i}`}>
                   <img className='img-fluid' src={img} alt='First slide' />
