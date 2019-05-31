@@ -20,11 +20,7 @@ const Home = () => {
           dir='right'
           text='Nurturing Nature is inspired by city gardening. With organic form breaking through or within the geometric from, the new growing leaves of pruned trees implied how people keep their personalities when following the city rule. When I imitate natural pattern and make it into jewelry pieces, it is also my own way to nurture the nature. People wonder at the texture or material in my designs. It is the rebirth of natural elements, which leads people to carefully gaze, question and think. Deconstructing natural patterns, I take the original form and turn it into a basic element; the pattern of a mushroom becomes part of my language.'
         />
-        <Showcase
-          img={img3}
-          dir='left'
-          text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus praesentium quod consequuntur? Vitae repudiandae dolore, explicabo ut distinctio quisquam quasi dicta repellat aut sed inventore provident unde! Dolore, beatae suscipit.'
-        />
+        <Showcase img={img3} dir='left' text='Coming Soon' />
       </div>
     </>
   );

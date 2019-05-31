@@ -6,7 +6,7 @@ const Showcase = ({ img, dir, text, color }) => {
         className='col-lg-6 vh-100'
         style={{ background: `url("${img}") no-repeat center center/cover` }}
       />
-      <div className='col-lg-6 d-lg-flex align-items-center'>
+      <div className='col-lg-6 d-lg-flex align-items-center justify-content-lg-center'>
         <div>
           <p>{text}</p>
           <button className='btn btn-outline-secondary'>View More</button>
