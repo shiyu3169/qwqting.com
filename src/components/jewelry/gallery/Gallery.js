@@ -22,8 +22,10 @@ export default class Gallery extends Component {
               </div>
             </div>
             <div className='col-lg-4'>
-              <img className='w-100' src={nn1} alt='Nurturing Nature' />
-              <p>Nurturing Nature</p>
+              <Link to='/nurturing-nature'>
+                <img className='w-100' src={nn1} alt='Nurturing Nature' />
+                <p>Nurturing Nature</p>
+              </Link>
             </div>
             <div className='col-lg-4'>
               <img className='w-100' src={one1} alt='One Of A Kind' />

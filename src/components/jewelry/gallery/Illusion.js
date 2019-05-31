@@ -27,8 +27,8 @@ const Illusion = () => {
   return (
     <>
       <Navbar active='jewelry' />
-      <div className='container mt-5 pt-5 text-center'>
-        <h2 className='section-title'>Illusion</h2>
+      <div className='container mt-5 pt-5'>
+        <h2 className='section-title text-center'>Illusion</h2>
         <div className='row'>
           <div className='col-lg-3'>
             <img

@@ -31,7 +31,7 @@ function App() {
         {/* Jewelry */}
         <Route exact path='/gallery' component={Gallery} />
         <Route exact path='/illusion' component={Illusion} />
-        <Route exact path='/nurturing_nature' component={NuturingNature} />
+        <Route exact path='/nurturing-nature' component={NuturingNature} />
         <Route exact path='/lookBook' component={LookBook} />
         <Route exact path='/rendering' component={Rendering} />
         {/* Illustration */}
