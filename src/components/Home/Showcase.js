@@ -1,5 +1,7 @@
 import React from 'react';
-const Showcase = ({ img, dir, text, color }) => {
+import { Link } from 'react-router-dom';
+
+const Showcase = ({ img, dir, text, link }) => {
   return dir === 'left' ? (
     <div className='row text-center'>
       <div
@@ -9,7 +11,9 @@ const Showcase = ({ img, dir, text, color }) => {
       <div className='col-lg-6 d-lg-flex align-items-center justify-content-lg-center'>
         <div>
           <p>{text}</p>
-          <button className='btn btn-outline-secondary'>View More</button>
+          <Link to={link} className='btn btn-outline-secondary'>
+            View More
+          </Link>
         </div>
       </div>
     </div>
@@ -18,7 +22,9 @@ const Showcase = ({ img, dir, text, color }) => {
       <div className='col-lg-6 d-none d-lg-flex align-items-center'>
         <div>
           <p>{text}</p>
-          <button className='btn btn-outline-secondary'>View More</button>
+          <Link to={link} className='btn btn-outline-secondary'>
+            View More
+          </Link>
         </div>
       </div>
       <div
@@ -28,7 +34,9 @@ const Showcase = ({ img, dir, text, color }) => {
       <div className='col-lg-6 d-lg-none align-items-center'>
         <div>
           <p>{text}</p>
-          <button className='btn btn-outline-secondary'>View More</button>
+          <Link to={link} className='btn btn-outline-secondary'>
+            View More
+          </Link>
         </div>
       </div>
     </div>
