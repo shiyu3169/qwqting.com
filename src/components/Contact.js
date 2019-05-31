@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className='container text-center'>
       <h2 className='section-title mb-4'>Contact Me</h2>
-      <form method='POST' data-netlify='true' data-netlify-recaptcha='true'>
+      <form name='contactQiuting' method='POST' data-netlify='true'>
         <div className='row'>
           <div className='col-lg-6'>
             <div className='form-group'>
@@ -56,9 +56,6 @@ const Contact = () => {
             name='message'
             rows='5'
           />
-        </div>
-        <div>
-          <div data-netlify-recaptcha='true' />
         </div>
         <button type='submit' className='btn btn-outline-dark'>
           Submit
