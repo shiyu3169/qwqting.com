@@ -21,6 +21,7 @@ import i72 from '../../../img/jewelry/gallery/illusion/7/2.jpg';
 import i73 from '../../../img/jewelry/gallery/illusion/7/3.jpg';
 import i81 from '../../../img/jewelry/gallery/illusion/8/1.webp';
 import i82 from '../../../img/jewelry/gallery/illusion/8/2.jpg';
+import Modal from '../../utility/Modal';
 
 const Illusion = () => {
   return (
@@ -103,6 +104,14 @@ const Illusion = () => {
               data-target='.i8'
             />
           </div>
+          <Modal target='i1' imgs={[i11, i12, i13]} />
+          <Modal target='i2' imgs={[i21, i22, i23]} />
+          <Modal target='i3' imgs={[i31, i32]} />
+          <Modal target='i4' imgs={[i41, i42]} />
+          <Modal target='i5' imgs={[i51, i52]} />
+          <Modal target='i6' imgs={[i61, i62, i63, i64]} />
+          <Modal target='i7' imgs={[i71, i72, i73]} />
+          <Modal target='i8' imgs={[i81, i82]} />
         </div>
         <p className='mt-5'>
           This collection is derived from Nuturing Nature which is inspired by

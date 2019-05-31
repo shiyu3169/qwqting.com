@@ -30,3 +30,18 @@ a {
     color: white;
   }
 }
+
+.carousel-control {
+  &-prev,
+  &-next {
+    i {
+      color: black;
+    }
+  }
+}
+
+.carousel-inner {
+  img {
+    height: 90vh;
+  }
+}
