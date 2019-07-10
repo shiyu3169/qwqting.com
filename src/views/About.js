@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from './utility/Navbar';
+import Navbar from '../components/utility/Navbar';
 import about from '../img/about.jpg';
-import Contact from './Contact';
+import Contact from '../components/Contact';
 
 const About = () => {
   return (

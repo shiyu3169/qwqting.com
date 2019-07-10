@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../utility/Navbar';
-import Showcase from './Showcase';
-import img1 from '../../img/jewelry/gallery/illusion/5/2.jpg';
-import img2 from '../../img/jewelry/gallery/nurturingNature/1/1.jpg';
-import img3 from '../../img/illustration/i8.jpg';
+import Navbar from '../components/utility/Navbar';
+import Showcase from '../components/Home/Showcase';
+import img1 from '../img/jewelry/gallery/illusion/5/2.jpg';
+import img2 from '../img/jewelry/gallery/nurturingNature/1/1.jpg';
+import img3 from '../img/illustration/i8.jpg';
 const Home = () => {
   return (
     <>

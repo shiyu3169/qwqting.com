@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../utility/Navbar';
+import Navbar from '../../../components/utility/Navbar';
 import i11 from '../../../img/jewelry/gallery/illusion/1/1.webp';
 import i12 from '../../../img/jewelry/gallery/illusion/1/2.webp';
 import i13 from '../../../img/jewelry/gallery/illusion/1/3.webp';
@@ -21,7 +21,7 @@ import i72 from '../../../img/jewelry/gallery/illusion/7/2.jpg';
 import i73 from '../../../img/jewelry/gallery/illusion/7/3.jpg';
 import i81 from '../../../img/jewelry/gallery/illusion/8/1.webp';
 import i82 from '../../../img/jewelry/gallery/illusion/8/2.jpg';
-import Modal from '../../utility/Modal';
+import Modal from '../../../components/utility/Modal';
 
 const Illusion = () => {
   return (
