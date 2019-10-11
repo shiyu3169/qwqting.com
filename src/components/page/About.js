@@ -1,18 +1,18 @@
-import React from 'react';
-import Navbar from '../components/utility/Navbar';
-import about from '../img/about.jpg';
-import Contact from '../components/Contact';
+import React from "react";
+import Navbar from "../layout/Navbar";
+import about from "../../img/about.jpg";
+import Contact from "../about/Contact";
 
 const About = () => {
   return (
     <>
-      <Navbar active='about' />
-      <div className='container my-5 py-5'>
-        <div className='row'>
-          <div className='col-lg-4'>
-            <img className='w-100' src={about} alt='Qiuting' />
+      <Navbar active="about" />
+      <div className="container my-5 py-5">
+        <div className="row">
+          <div className="col-lg-4">
+            <img className="w-100" src={about} alt="Qiuting" />
           </div>
-          <div className='col-lg-8 d-lg-flex align-items-center'>
+          <div className="col-lg-8 d-lg-flex align-items-center">
             <p>
               Originally from Chengdu, China, I majored in jewelry with a
               Bachelor of Fine Arts at the Savannah College of Art and Design. I
