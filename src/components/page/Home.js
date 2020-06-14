@@ -1,9 +1,10 @@
-import React from "react";
-import Navbar from "../layout/Navbar";
-import Showcase from "../layout/Showcase";
-import img1 from "../../img/jewelry/gallery/illusion/5/2.jpg";
-import img2 from "../../img/jewelry/gallery/nurturingNature/1/1.jpg";
-import img3 from "../../img/illustration/i8.jpg";
+import React from "react"
+import Navbar from "../layout/Navbar"
+import Showcase from "../layout/Showcase"
+import img1 from "../../img/jewelry/gallery/illusion/5/2.jpg"
+import img2 from "../../img/jewelry/gallery/nurturingNature/1/1.jpg"
+import img3 from "../../img/illustration/i8.jpg"
+import EntryModule from "../home/entry_module/EntryModule"
 const Home = () => {
   return (
     <>
@@ -29,8 +30,9 @@ const Home = () => {
           link="/illustration"
         />
       </div>
+      <EntryModule />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

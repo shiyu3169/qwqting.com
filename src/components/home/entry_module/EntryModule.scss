@@ -1,0 +1,39 @@
+@import "../../../assets/styles/medias";
+
+.entry-module {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  background-color: rgba($color: rgb(235, 235, 235), $alpha: 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overscroll-behavior-y: none;
+  .close {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    cursor: pointer;
+  }
+  .thumbnail {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+  .entries {
+    display: flex;
+    margin-top: 8rem;
+    justify-content: space-evenly;
+    width: 60vw;
+    @include tablet-down {
+      width: 70vw;
+    }
+    @include phone-down {
+      width: 80vw;
+    }
+  }
+}

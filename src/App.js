@@ -1,19 +1,19 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React from "react"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 // Style
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "./css/app.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import "./css/app.scss"
 // Components
-import Home from "./components/page/Home";
-import About from "./components/page/About";
-import Footer from "./components/layout/Footer";
-import Gallery from "./components/page/Gallery";
-import Illusion from "./components/page/Illusion";
-import NuturingNature from "./components/page/NuturingNature";
-import Rendering from "./components/page/Rendering";
-import LookBook from "./components/page/LookBook";
-import Illustration from "./components/page/Illustration";
-import ScrollToTop from "./components/layout/ScrollToTop";
+import Home from "./components/page/Home"
+import About from "./components/page/About"
+import Footer from "./components/layout/Footer"
+import Gallery from "./components/page/Gallery"
+import Illusion from "./components/page/Illusion"
+import NuturingNature from "./components/page/NuturingNature"
+import Rendering from "./components/page/Rendering"
+import LookBook from "./components/page/LookBook"
+import Illustration from "./components/page/Illustration"
+import ScrollToTop from "./components/layout/ScrollToTop"
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
         <Footer />
       </ScrollToTop>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
