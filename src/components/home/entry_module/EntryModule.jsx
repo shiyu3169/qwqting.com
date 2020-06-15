@@ -9,8 +9,8 @@ const EntryModule = ({ setEntryModuleOpen }) => {
         className="fas fa-times close fa-2x"
         onClick={() => setEntryModuleOpen(false)}
       ></i>
-      <a href="https://www.etsy.com/shop/QwQiuting">Shop</a>
       <span onClick={() => setEntryModuleOpen(false)}>Website</span>
+      <a href="https://www.etsy.com/shop/QwQiuting">Shop</a>
       <a href="https://www.instagram.com/qiuting.w.jewelry/">
         Jewelry Instagram
       </a>
