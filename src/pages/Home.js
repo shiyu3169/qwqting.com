@@ -1,11 +1,14 @@
-import React from "react"
-import Navbar from "../layout/Navbar"
-import Showcase from "../layout/Showcase"
-import img1 from "../../img/jewelry/gallery/illusion/5/2.jpg"
-import img2 from "../../img/jewelry/gallery/nurturingNature/1/1.jpg"
-import img3 from "../../img/illustration/i8.jpg"
-import EntryModule from "../home/entry_module/EntryModule"
+import React, { useState } from "react"
+
+import Navbar from "../components/layout/Navbar"
+import Showcase from "../components/layout/Showcase"
+import EntryModule from "../components/home/entry_module/EntryModule"
+
+import img1 from "../img/jewelry/gallery/illusion/5/2.jpg"
+import img2 from "../img/jewelry/gallery/nurturingNature/1/1.jpg"
+import img3 from "../img/illustration/i8.jpg"
 const Home = () => {
+  const [ entryModuleOpen, setEntryModuleOpen ] = useState(true);
   return (
     <>
       <Navbar active="home" />
@@ -30,7 +33,7 @@ const Home = () => {
           link="/illustration"
         />
       </div>
-      <EntryModule />
+      {entryModuleOpen && <EntryModule setEntryModuleOpen={setEntryModuleOpen} />}
     </>
   )
 }

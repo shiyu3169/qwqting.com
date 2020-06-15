@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "./css/app.scss"
 // Components
-import Home from "./components/page/Home"
+import Home from "./pages/Home"
 import About from "./components/page/About"
 import Footer from "./components/layout/Footer"
 import Gallery from "./components/page/Gallery"

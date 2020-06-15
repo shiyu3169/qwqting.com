@@ -13,22 +13,23 @@
   justify-content: center;
   flex-direction: column;
   overscroll-behavior-y: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+
   .close {
     position: absolute;
     top: 5rem;
     right: 5rem;
     cursor: pointer;
   }
-  .entries {
-    display: flex;
-    margin-top: 8rem;
-    justify-content: space-evenly;
-    width: 60vw;
-    @include tablet-down {
-      width: 70vw;
-    }
-    @include phone-down {
-      width: 80vw;
+
+  a,
+  span {
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(138, 138, 138)
     }
   }
 }
